@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editorial_memorials",
+  "info": {
+    "singularName": "editorial-memorial",
+    "pluralName": "editorial-memorials",
+    "displayName": "Editorial Memorial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "org": {
+      "type": "enumeration",
+      "enum": [
+        "hani",
+        "khan",
+        "ohmynews",
+        "vegannews",
+        "vop"
+      ]
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    }
+  }
+}

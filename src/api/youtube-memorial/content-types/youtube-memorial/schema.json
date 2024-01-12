@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "youtube_memorials",
+  "info": {
+    "singularName": "youtube-memorial",
+    "pluralName": "youtube-memorials",
+    "displayName": "Youtube Memorial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "videoId": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    }
+  }
+}

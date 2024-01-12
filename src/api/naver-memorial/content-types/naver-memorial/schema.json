@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "naver_memorials",
+  "info": {
+    "singularName": "naver-memorial",
+    "pluralName": "naver-memorials",
+    "displayName": "NAVER Memorial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "oid": {
+      "type": "string"
+    },
+    "aid": {
+      "type": "string"
+    },
+    "entertainment": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "date"
+    }
+  }
+}
