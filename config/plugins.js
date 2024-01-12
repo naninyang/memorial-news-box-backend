@@ -2,12 +2,12 @@ module.exports = ({ env }) => ({
   "netlify-deployments": {
     enabled: true,
     config: {
-      accessToken: "<netlify-access-token>",
+      accessToken: process.env.NETLIFY_ACCESS_TOKEN,
       sites: [
         {
-          name: "Memorial NewsBox",
-          id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-          buildHook: "https://api.netlify.com/build_hooks/<hook_id>",
+          name: process.env.NETLIFY_SITE_NAME,
+          id: process.env.NETLIFY_SITE_ID,
+          buildHook: `https://api.netlify.com/build_hooks/${process.env.NETLIFY_BUILDHOOK}`,
           branch: "main",
         },
       ],
