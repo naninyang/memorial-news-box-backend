@@ -5,9 +5,11 @@ module.exports = ({ env }) => ({
       accessToken: process.env.NETLIFY_ACCESS_TOKEN,
       sites: [
         {
-          name: process.env.NETLIFY_SITE_NAME,
-          id: process.env.NETLIFY_SITE_ID,
-          buildHook: `https://api.netlify.com/build_hooks/${process.env.NETLIFY_BUILDHOOK}`,
+          name: env("NETLIFY_SITE_NAME"),
+          id: env("NETLIFY_SITE_ID"),
+          buildHook: `https://api.netlify.com/build_hooks/${env(
+            "NETLIFY_BUILDHOOK"
+          )}`,
           branch: "main",
         },
       ],
