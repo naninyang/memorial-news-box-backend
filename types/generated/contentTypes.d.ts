@@ -362,114 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiEditorialMemorialEditorialMemorial
-  extends Schema.CollectionType {
-  collectionName: 'editorial_memorials';
-  info: {
-    singularName: 'editorial-memorial';
-    pluralName: 'editorial-memorials';
-    displayName: 'Editorial Memorial';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String;
-    org: Attribute.Enumeration<
-      ['hani', 'khan', 'ohmynews', 'vegannews', 'vop']
-    >;
-    thumbnail: Attribute.String;
-    created: Attribute.Date;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::editorial-memorial.editorial-memorial',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::editorial-memorial.editorial-memorial',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiNaverMemorialNaverMemorial extends Schema.CollectionType {
-  collectionName: 'naver_memorials';
-  info: {
-    singularName: 'naver-memorial';
-    pluralName: 'naver-memorials';
-    displayName: 'NAVER Memorial';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
-    thumbnail: Attribute.String;
-    oid: Attribute.String;
-    aid: Attribute.String;
-    entertainment: Attribute.Boolean;
-    created: Attribute.Date;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::naver-memorial.naver-memorial',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::naver-memorial.naver-memorial',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiYoutubeMemorialYoutubeMemorial
-  extends Schema.CollectionType {
-  collectionName: 'youtube_memorials';
-  info: {
-    singularName: 'youtube-memorial';
-    pluralName: 'youtube-memorials';
-    displayName: 'Youtube Memorial';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
-    comment: Attribute.Text;
-    videoId: Attribute.String;
-    created: Attribute.Date;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::youtube-memorial.youtube-memorial',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::youtube-memorial.youtube-memorial',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -876,6 +768,114 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiEditorialMemorialEditorialMemorial
+  extends Schema.CollectionType {
+  collectionName: 'editorial_memorials';
+  info: {
+    singularName: 'editorial-memorial';
+    pluralName: 'editorial-memorials';
+    displayName: 'Editorial Memorial';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    org: Attribute.Enumeration<
+      ['hani', 'khan', 'ohmynews', 'vegannews', 'vop']
+    >;
+    thumbnail: Attribute.String;
+    created: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::editorial-memorial.editorial-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::editorial-memorial.editorial-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNaverMemorialNaverMemorial extends Schema.CollectionType {
+  collectionName: 'naver_memorials';
+  info: {
+    singularName: 'naver-memorial';
+    pluralName: 'naver-memorials';
+    displayName: 'NAVER Memorial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    thumbnail: Attribute.String;
+    oid: Attribute.String;
+    aid: Attribute.String;
+    entertainment: Attribute.Boolean;
+    created: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::naver-memorial.naver-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::naver-memorial.naver-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiYoutubeMemorialYoutubeMemorial
+  extends Schema.CollectionType {
+  collectionName: 'youtube_memorials';
+  info: {
+    singularName: 'youtube-memorial';
+    pluralName: 'youtube-memorials';
+    displayName: 'Youtube Memorial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    comment: Attribute.Text;
+    videoId: Attribute.String;
+    created: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::youtube-memorial.youtube-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::youtube-memorial.youtube-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -886,9 +886,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
-      'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
-      'api::youtube-memorial.youtube-memorial': ApiYoutubeMemorialYoutubeMemorial;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -897,6 +894,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
+      'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
+      'api::youtube-memorial.youtube-memorial': ApiYoutubeMemorialYoutubeMemorial;
     }
   }
 }
