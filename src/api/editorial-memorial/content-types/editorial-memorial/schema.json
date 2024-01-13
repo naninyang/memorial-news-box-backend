@@ -30,6 +30,9 @@
     },
     "created": {
       "type": "date"
+    },
+    "articleNumber": {
+      "type": "string"
     }
   }
 }

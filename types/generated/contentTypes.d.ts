@@ -787,6 +787,7 @@ export interface ApiEditorialMemorialEditorialMemorial
     >;
     thumbnail: Attribute.String;
     created: Attribute.Date;
+    articleNumber: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
