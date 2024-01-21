@@ -870,6 +870,9 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
     lyricist: Attribute.String;
     lyrics: Attribute.Text;
     created: Attribute.Date;
+    platform: Attribute.Enumeration<
+      ['youtube', 'naverNews', 'naverEntertainment']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -943,7 +946,6 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
     thumbnail: Attribute.String;
     summary: Attribute.String;
     description: Attribute.Text;
-    naver: Attribute.Boolean;
     music: Attribute.String;
     videoid: Attribute.String;
     artist: Attribute.String;
@@ -952,6 +954,9 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
     lyricist: Attribute.String;
     lyrics: Attribute.Text;
     created: Attribute.Date;
+    Platform: Attribute.Enumeration<
+      ['youtube', 'naverNews', 'naverEntertainment']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

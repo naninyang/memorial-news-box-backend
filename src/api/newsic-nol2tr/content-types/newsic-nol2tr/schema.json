@@ -33,9 +33,6 @@
     "description": {
       "type": "text"
     },
-    "naver": {
-      "type": "boolean"
-    },
     "music": {
       "type": "string"
     },
@@ -59,6 +56,14 @@
     },
     "created": {
       "type": "date"
+    },
+    "Platform": {
+      "type": "enumeration",
+      "enum": [
+        "youtube",
+        "naverNews",
+        "naverEntertainment"
+      ]
     }
   }
 }
