@@ -774,6 +774,7 @@ export interface ApiEbenumNol2TrEbenumNol2Tr extends Schema.CollectionType {
     singularName: 'ebenum-nol2tr';
     pluralName: 'ebenum-nol2trs';
     displayName: 'Ebenum nol2tr';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -781,7 +782,6 @@ export interface ApiEbenumNol2TrEbenumNol2Tr extends Schema.CollectionType {
   attributes: {
     subject: Attribute.String;
     addr: Attribute.String;
-    summary: Attribute.String;
     description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

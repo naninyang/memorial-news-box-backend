@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ebenum-nol2tr",
     "pluralName": "ebenum-nol2trs",
-    "displayName": "Ebenum nol2tr"
+    "displayName": "Ebenum nol2tr",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,9 +16,6 @@
       "type": "string"
     },
     "addr": {
-      "type": "string"
-    },
-    "summary": {
       "type": "string"
     },
     "description": {
