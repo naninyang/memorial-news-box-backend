@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interview_nol2trs",
+  "info": {
+    "singularName": "interview-nol2tr",
+    "pluralName": "interview-nol2trs",
+    "displayName": "Interview nol2tr",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "vid": {
+      "type": "string"
+    },
+    "oid": {
+      "type": "string"
+    },
+    "aid": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "interviewer": {
+      "type": "string"
+    },
+    "interviewee": {
+      "type": "string"
+    },
+    "naver": {
+      "type": "boolean"
+    },
+    "music": {
+      "type": "string"
+    },
+    "videoid": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "album": {
+      "type": "string"
+    },
+    "composer": {
+      "type": "string"
+    },
+    "lyricist": {
+      "type": "string"
+    },
+    "lyrics": {
+      "type": "text"
+    },
+    "created": {
+      "type": "date"
+    }
+  }
+}

@@ -768,6 +768,39 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiEbenumNol2TrEbenumNol2Tr extends Schema.CollectionType {
+  collectionName: 'ebenum_nol2trs';
+  info: {
+    singularName: 'ebenum-nol2tr';
+    pluralName: 'ebenum-nol2trs';
+    displayName: 'Ebenum nol2tr';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    addr: Attribute.String;
+    summary: Attribute.String;
+    description: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::ebenum-nol2tr.ebenum-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::ebenum-nol2tr.ebenum-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiEditorialMemorialEditorialMemorial
   extends Schema.CollectionType {
   collectionName: 'editorial_memorials';
@@ -806,6 +839,55 @@ export interface ApiEditorialMemorialEditorialMemorial
   };
 }
 
+export interface ApiInterviewNol2TrInterviewNol2Tr
+  extends Schema.CollectionType {
+  collectionName: 'interview_nol2trs';
+  info: {
+    singularName: 'interview-nol2tr';
+    pluralName: 'interview-nol2trs';
+    displayName: 'Interview nol2tr';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    vid: Attribute.String;
+    oid: Attribute.String;
+    aid: Attribute.String;
+    thumbnail: Attribute.String;
+    summary: Attribute.String;
+    description: Attribute.Text;
+    interviewer: Attribute.String;
+    interviewee: Attribute.String;
+    naver: Attribute.Boolean;
+    music: Attribute.String;
+    videoid: Attribute.String;
+    artist: Attribute.String;
+    album: Attribute.String;
+    composer: Attribute.String;
+    lyricist: Attribute.String;
+    lyrics: Attribute.Text;
+    created: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::interview-nol2tr.interview-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::interview-nol2tr.interview-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiNaverMemorialNaverMemorial extends Schema.CollectionType {
   collectionName: 'naver_memorials';
   info: {
@@ -835,6 +917,52 @@ export interface ApiNaverMemorialNaverMemorial extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::naver-memorial.naver-memorial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
+  collectionName: 'newsic_nol2trs';
+  info: {
+    singularName: 'newsic-nol2tr';
+    pluralName: 'newsic-nol2trs';
+    displayName: 'Newsic nol2tr';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    vid: Attribute.String;
+    oid: Attribute.String;
+    aid: Attribute.String;
+    thumbnail: Attribute.String;
+    summary: Attribute.String;
+    description: Attribute.Text;
+    naver: Attribute.Boolean;
+    music: Attribute.String;
+    videoid: Attribute.String;
+    artist: Attribute.String;
+    album: Attribute.String;
+    composer: Attribute.String;
+    lyricist: Attribute.String;
+    lyrics: Attribute.Text;
+    created: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::newsic-nol2tr.newsic-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::newsic-nol2tr.newsic-nol2tr',
       'oneToOne',
       'admin::user'
     > &
@@ -895,8 +1023,11 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
+      'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
+      'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;
       'api::youtube-memorial.youtube-memorial': ApiYoutubeMemorialYoutubeMemorial;
     }
   }

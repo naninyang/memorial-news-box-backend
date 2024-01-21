@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ebenum_nol2trs",
+  "info": {
+    "singularName": "ebenum-nol2tr",
+    "pluralName": "ebenum-nol2trs",
+    "displayName": "Ebenum nol2tr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "addr": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
