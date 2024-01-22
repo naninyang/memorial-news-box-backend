@@ -57,13 +57,16 @@
     "created": {
       "type": "date"
     },
-    "Platform": {
+    "platform": {
       "type": "enumeration",
       "enum": [
         "youtube",
         "naverNews",
         "naverEntertainment"
       ]
+    },
+    "start": {
+      "type": "integer"
     }
   }
 }

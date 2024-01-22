@@ -873,6 +873,7 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
     platform: Attribute.Enumeration<
       ['youtube', 'naverNews', 'naverEntertainment']
     >;
+    start: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -954,9 +955,10 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
     lyricist: Attribute.String;
     lyrics: Attribute.Text;
     created: Attribute.Date;
-    Platform: Attribute.Enumeration<
+    platform: Attribute.Enumeration<
       ['youtube', 'naverNews', 'naverEntertainment']
     >;
+    start: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

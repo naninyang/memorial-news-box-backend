@@ -73,6 +73,9 @@
         "naverNews",
         "naverEntertainment"
       ]
+    },
+    "start": {
+      "type": "integer"
     }
   }
 }
