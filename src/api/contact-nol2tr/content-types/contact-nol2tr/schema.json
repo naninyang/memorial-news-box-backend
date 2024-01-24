@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_nol2trs",
+  "info": {
+    "singularName": "contact-nol2tr",
+    "pluralName": "contact-nol2trs",
+    "displayName": "Contact nol2tr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "guestName": {
+      "type": "string"
+    },
+    "guestEmail": {
+      "type": "email"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

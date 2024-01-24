@@ -768,6 +768,39 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
+  collectionName: 'contact_nol2trs';
+  info: {
+    singularName: 'contact-nol2tr';
+    pluralName: 'contact-nol2trs';
+    displayName: 'Contact nol2tr';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    guestName: Attribute.String;
+    guestEmail: Attribute.Email;
+    content: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::contact-nol2tr.contact-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::contact-nol2tr.contact-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiEbenumNol2TrEbenumNol2Tr extends Schema.CollectionType {
   collectionName: 'ebenum_nol2trs';
   info: {
@@ -977,6 +1010,38 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
   };
 }
 
+export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
+  collectionName: 'notice_nol2trs';
+  info: {
+    singularName: 'notice-nol2tr';
+    pluralName: 'notice-nol2trs';
+    displayName: 'Notice nol2tr';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    description: Attribute.Text;
+    created: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::notice-nol2tr.notice-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::notice-nol2tr.notice-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiYoutubeMemorialYoutubeMemorial
   extends Schema.CollectionType {
   collectionName: 'youtube_memorials';
@@ -1030,11 +1095,13 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
       'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;
+      'api::notice-nol2tr.notice-nol2tr': ApiNoticeNol2TrNoticeNol2Tr;
       'api::youtube-memorial.youtube-memorial': ApiYoutubeMemorialYoutubeMemorial;
     }
   }
