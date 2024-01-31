@@ -907,6 +907,7 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
       ['youtube', 'naverNews', 'naverEntertainment']
     >;
     start: Attribute.Integer;
+    opengraph: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -992,6 +993,7 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
       ['youtube', 'naverNews', 'naverEntertainment']
     >;
     start: Attribute.Integer;
+    opengraph: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
