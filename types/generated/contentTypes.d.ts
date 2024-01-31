@@ -921,6 +921,26 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
     >;
     start: Attribute.Integer;
     opengraph: Attribute.String;
+    vi: Attribute.Enumeration<
+      [
+        'maxresdefault',
+        'sddefault',
+        'hqdefault',
+        'mqdefault',
+        'default',
+        'missing'
+      ]
+    >;
+    vvi: Attribute.Enumeration<
+      [
+        'maxresdefault',
+        'sddefault',
+        'hqdefault',
+        'mqdefault',
+        'default',
+        'missing'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1007,6 +1027,26 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
     >;
     start: Attribute.Integer;
     opengraph: Attribute.String;
+    vi: Attribute.Enumeration<
+      [
+        'maxresdefault',
+        'sddefault',
+        'hqdefault',
+        'mqdefault',
+        'default',
+        'missing'
+      ]
+    >;
+    vvi: Attribute.Enumeration<
+      [
+        'maxresdefault',
+        'sddefault',
+        'hqdefault',
+        'mqdefault',
+        'default',
+        'missing'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

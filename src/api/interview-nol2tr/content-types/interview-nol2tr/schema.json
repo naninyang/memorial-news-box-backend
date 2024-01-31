@@ -79,6 +79,28 @@
     },
     "opengraph": {
       "type": "string"
+    },
+    "vi": {
+      "type": "enumeration",
+      "enum": [
+        "maxresdefault",
+        "sddefault",
+        "hqdefault",
+        "mqdefault",
+        "default",
+        "missing"
+      ]
+    },
+    "vvi": {
+      "type": "enumeration",
+      "enum": [
+        "maxresdefault",
+        "sddefault",
+        "hqdefault",
+        "mqdefault",
+        "default",
+        "missing"
+      ]
     }
   }
 }
