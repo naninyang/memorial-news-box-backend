@@ -1071,6 +1071,7 @@ export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
     singularName: 'notice-nol2tr';
     pluralName: 'notice-nol2trs';
     displayName: 'Notice nol2tr';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1079,6 +1080,7 @@ export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
     subject: Attribute.String;
     description: Attribute.Text;
     created: Attribute.Date;
+    platform: Attribute.Enumeration<['shorts', 'memorial', 'nol2tr']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "notice-nol2tr",
     "pluralName": "notice-nol2trs",
-    "displayName": "Notice nol2tr"
+    "displayName": "Notice nol2tr",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,14 @@
     },
     "created": {
       "type": "date"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "shorts",
+        "memorial",
+        "nol2tr"
+      ]
     }
   }
 }
