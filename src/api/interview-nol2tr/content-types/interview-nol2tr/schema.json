@@ -45,24 +45,6 @@
     "music": {
       "type": "string"
     },
-    "videoid": {
-      "type": "string"
-    },
-    "artist": {
-      "type": "string"
-    },
-    "album": {
-      "type": "string"
-    },
-    "composer": {
-      "type": "string"
-    },
-    "lyricist": {
-      "type": "string"
-    },
-    "lyrics": {
-      "type": "text"
-    },
     "created": {
       "type": "date"
     },
@@ -74,24 +56,10 @@
         "naverEntertainment"
       ]
     },
-    "start": {
-      "type": "integer"
-    },
     "opengraph": {
       "type": "string"
     },
     "vi": {
-      "type": "enumeration",
-      "enum": [
-        "maxresdefault",
-        "sddefault",
-        "hqdefault",
-        "mqdefault",
-        "default",
-        "missing"
-      ]
-    },
-    "vvi": {
       "type": "enumeration",
       "enum": [
         "maxresdefault",

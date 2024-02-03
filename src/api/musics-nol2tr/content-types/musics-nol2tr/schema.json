@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "musics_nol2trs",
+  "info": {
+    "singularName": "musics-nol2tr",
+    "pluralName": "musics-nol2trs",
+    "displayName": "Musics nol2tr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "music": {
+      "type": "string"
+    },
+    "videoid": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "album": {
+      "type": "string"
+    },
+    "composer": {
+      "type": "string"
+    },
+    "lyricist": {
+      "type": "string"
+    },
+    "lyrics": {
+      "type": "text"
+    },
+    "start": {
+      "type": "integer"
+    },
+    "vvi": {
+      "type": "enumeration",
+      "enum": [
+        "maxresdefault",
+        "sddefault",
+        "hqdefault",
+        "mqdefault",
+        "default",
+        "missing"
+      ]
+    }
+  }
+}

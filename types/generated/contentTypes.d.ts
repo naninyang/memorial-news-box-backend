@@ -909,29 +909,12 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
     interviewee: Attribute.String;
     naver: Attribute.Boolean;
     music: Attribute.String;
-    videoid: Attribute.String;
-    artist: Attribute.String;
-    album: Attribute.String;
-    composer: Attribute.String;
-    lyricist: Attribute.String;
-    lyrics: Attribute.Text;
     created: Attribute.Date;
     platform: Attribute.Enumeration<
       ['youtube', 'naverNews', 'naverEntertainment']
     >;
-    start: Attribute.Integer;
     opengraph: Attribute.String;
     vi: Attribute.Enumeration<
-      [
-        'maxresdefault',
-        'sddefault',
-        'hqdefault',
-        'mqdefault',
-        'default',
-        'missing'
-      ]
-    >;
-    vvi: Attribute.Enumeration<
       [
         'maxresdefault',
         'sddefault',
@@ -952,6 +935,53 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::interview-nol2tr.interview-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
+  collectionName: 'musics_nol2trs';
+  info: {
+    singularName: 'musics-nol2tr';
+    pluralName: 'musics-nol2trs';
+    displayName: 'Musics nol2tr';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    music: Attribute.String;
+    videoid: Attribute.String;
+    artist: Attribute.String;
+    album: Attribute.String;
+    composer: Attribute.String;
+    lyricist: Attribute.String;
+    lyrics: Attribute.Text;
+    start: Attribute.Integer;
+    vvi: Attribute.Enumeration<
+      [
+        'maxresdefault',
+        'sddefault',
+        'hqdefault',
+        'mqdefault',
+        'default',
+        'missing'
+      ]
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::musics-nol2tr.musics-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::musics-nol2tr.musics-nol2tr',
       'oneToOne',
       'admin::user'
     > &
@@ -1015,29 +1045,12 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
     summary: Attribute.String;
     description: Attribute.Text;
     music: Attribute.String;
-    videoid: Attribute.String;
-    artist: Attribute.String;
-    album: Attribute.String;
-    composer: Attribute.String;
-    lyricist: Attribute.String;
-    lyrics: Attribute.Text;
     created: Attribute.Date;
     platform: Attribute.Enumeration<
       ['youtube', 'naverNews', 'naverEntertainment']
     >;
-    start: Attribute.Integer;
     opengraph: Attribute.String;
     vi: Attribute.Enumeration<
-      [
-        'maxresdefault',
-        'sddefault',
-        'hqdefault',
-        'mqdefault',
-        'default',
-        'missing'
-      ]
-    >;
-    vvi: Attribute.Enumeration<
       [
         'maxresdefault',
         'sddefault',
@@ -1156,6 +1169,7 @@ declare module '@strapi/types' {
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
       'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;
+      'api::musics-nol2tr.musics-nol2tr': ApiMusicsNol2TrMusicsNol2Tr;
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;
       'api::notice-nol2tr.notice-nol2tr': ApiNoticeNol2TrNoticeNol2Tr;
