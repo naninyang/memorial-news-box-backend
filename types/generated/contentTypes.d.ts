@@ -948,6 +948,7 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
     singularName: 'musics-nol2tr';
     pluralName: 'musics-nol2trs';
     displayName: 'Musics nol2tr';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -971,6 +972,7 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
         'missing'
       ]
     >;
+    instrument: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

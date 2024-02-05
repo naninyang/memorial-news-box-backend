@@ -4,7 +4,8 @@
   "info": {
     "singularName": "musics-nol2tr",
     "pluralName": "musics-nol2trs",
-    "displayName": "Musics nol2tr"
+    "displayName": "Musics nol2tr",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -45,6 +46,9 @@
         "default",
         "missing"
       ]
+    },
+    "instrument": {
+      "type": "boolean"
     }
   }
 }
