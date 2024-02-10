@@ -942,6 +942,53 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
   };
 }
 
+export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
+  collectionName: 'jejeup_jejeups';
+  info: {
+    singularName: 'jejeup-jejeup';
+    pluralName: 'jejeup-jejeups';
+    displayName: 'Jejeup Jejeup';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    video: Attribute.String;
+    description: Attribute.Text;
+    category: Attribute.Enumeration<['drama', 'movie', 'game']>;
+    release: Attribute.String;
+    creator: Attribute.String;
+    publisher: Attribute.String;
+    vi: Attribute.Enumeration<
+      [
+        'maxresdefault',
+        'sddefault',
+        'hqdefault',
+        'mqdefault',
+        'default',
+        'missing'
+      ]
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::jejeup-jejeup.jejeup-jejeup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::jejeup-jejeup.jejeup-jejeup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
   collectionName: 'musics_nol2trs';
   info: {
@@ -1095,7 +1142,7 @@ export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
     subject: Attribute.String;
     description: Attribute.Text;
     created: Attribute.Date;
-    platform: Attribute.Enumeration<['shorts', 'memorial', 'nol2tr']>;
+    platform: Attribute.Enumeration<['shorts', 'memorial', 'nol2tr', 'jejeup']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1171,6 +1218,7 @@ declare module '@strapi/types' {
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
       'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;
+      'api::jejeup-jejeup.jejeup-jejeup': ApiJejeupJejeupJejeupJejeup;
       'api::musics-nol2tr.musics-nol2tr': ApiMusicsNol2TrMusicsNol2Tr;
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;
