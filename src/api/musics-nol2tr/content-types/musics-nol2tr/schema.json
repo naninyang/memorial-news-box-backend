@@ -49,6 +49,9 @@
     },
     "instrument": {
       "type": "boolean"
+    },
+    "cover": {
+      "type": "string"
     }
   }
 }

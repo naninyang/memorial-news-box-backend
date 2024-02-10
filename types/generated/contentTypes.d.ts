@@ -1020,6 +1020,7 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
       ]
     >;
     instrument: Attribute.Boolean;
+    cover: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
