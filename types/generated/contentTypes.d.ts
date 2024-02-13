@@ -957,7 +957,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     subject: Attribute.String;
     video: Attribute.String;
     description: Attribute.Text;
-    category: Attribute.Enumeration<['drama', 'movie', 'game']>;
+    category: Attribute.Enumeration<['drama', 'movie', 'game', 'animation']>;
     release: Attribute.String;
     creator: Attribute.String;
     publisher: Attribute.String;
@@ -971,6 +971,11 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
         'missing'
       ]
     >;
+    country: Attribute.String;
+    genre: Attribute.String;
+    cast: Attribute.String;
+    anime: Attribute.Enumeration<['tva', 'ova', 'movie']>;
+    rating: Attribute.Enumeration<['all', 'a7', 'b12', 'c15', 'd19']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

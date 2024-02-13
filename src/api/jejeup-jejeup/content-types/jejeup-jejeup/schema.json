@@ -26,7 +26,8 @@
       "enum": [
         "drama",
         "movie",
-        "game"
+        "game",
+        "animation"
       ]
     },
     "release": {
@@ -47,6 +48,33 @@
         "mqdefault",
         "default",
         "missing"
+      ]
+    },
+    "country": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "cast": {
+      "type": "string"
+    },
+    "anime": {
+      "type": "enumeration",
+      "enum": [
+        "tva",
+        "ova",
+        "movie"
+      ]
+    },
+    "rating": {
+      "type": "enumeration",
+      "enum": [
+        "all",
+        "a7",
+        "b12",
+        "c15",
+        "d19"
       ]
     }
   }
