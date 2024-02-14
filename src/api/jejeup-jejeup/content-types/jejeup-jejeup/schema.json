@@ -28,7 +28,8 @@
         "movie",
         "game",
         "animation",
-        "ott"
+        "ott",
+        "ottFilm"
       ]
     },
     "release": {
@@ -81,7 +82,7 @@
     "ott": {
       "type": "enumeration",
       "enum": [
-        "amazoneOriginal",
+        "amazonOriginal",
         "appleOriginal",
         "disneyOriginal",
         "netflixOriginal",

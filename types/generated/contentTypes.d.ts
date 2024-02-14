@@ -958,7 +958,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     video: Attribute.String;
     description: Attribute.Text;
     category: Attribute.Enumeration<
-      ['drama', 'movie', 'game', 'animation', 'ott']
+      ['drama', 'movie', 'game', 'animation', 'ott', 'ottFilm']
     >;
     release: Attribute.String;
     creator: Attribute.String;
@@ -980,7 +980,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     rating: Attribute.Enumeration<['all', 'a7', 'b12', 'c15', 'd19']>;
     ott: Attribute.Enumeration<
       [
-        'amazoneOriginal',
+        'amazonOriginal',
         'appleOriginal',
         'disneyOriginal',
         'netflixOriginal',
