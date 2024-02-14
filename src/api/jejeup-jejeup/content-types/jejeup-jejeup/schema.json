@@ -19,7 +19,9 @@
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "unique": true
     },
     "category": {
       "type": "enumeration",

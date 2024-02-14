@@ -956,7 +956,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
   attributes: {
     subject: Attribute.String;
     video: Attribute.String;
-    description: Attribute.Text;
+    description: Attribute.Text & Attribute.Required & Attribute.Unique;
     category: Attribute.Enumeration<
       ['drama', 'movie', 'game', 'animation', 'ott', 'ottFilm']
     >;
