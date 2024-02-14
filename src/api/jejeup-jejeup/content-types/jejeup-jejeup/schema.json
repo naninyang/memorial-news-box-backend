@@ -86,6 +86,7 @@
       "enum": [
         "amazonOriginal",
         "appleOriginal",
+        "appleFilm",
         "disneyOriginal",
         "netflixOriginal",
         "netflixFilm",

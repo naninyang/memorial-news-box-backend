@@ -982,6 +982,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
       [
         'amazonOriginal',
         'appleOriginal',
+        'appleFilm',
         'disneyOriginal',
         'netflixOriginal',
         'netflixFilm',
