@@ -27,7 +27,8 @@
         "drama",
         "movie",
         "game",
-        "animation"
+        "animation",
+        "ott"
       ]
     },
     "release": {
@@ -75,6 +76,21 @@
         "b12",
         "c15",
         "d19"
+      ]
+    },
+    "ott": {
+      "type": "enumeration",
+      "enum": [
+        "amazoneOriginal",
+        "appleOriginal",
+        "disneyOriginal",
+        "netflixOriginal",
+        "netflixFilm",
+        "netflixAnime",
+        "netflixAnimeFilm",
+        "tvingOriginal",
+        "watchaOriginal",
+        "wavveOriginal"
       ]
     }
   }
