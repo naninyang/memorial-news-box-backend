@@ -956,23 +956,13 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
   attributes: {
     subject: Attribute.String;
     video: Attribute.String;
-    description: Attribute.Text & Attribute.Required & Attribute.Unique;
+    description: Attribute.String & Attribute.Required & Attribute.Unique;
     category: Attribute.Enumeration<
       ['drama', 'movie', 'game', 'animation', 'ott', 'ottFilm']
     >;
     release: Attribute.String;
     creator: Attribute.String;
     publisher: Attribute.String;
-    vi: Attribute.Enumeration<
-      [
-        'maxresdefault',
-        'sddefault',
-        'hqdefault',
-        'mqdefault',
-        'default',
-        'missing'
-      ]
-    >;
     country: Attribute.String;
     genre: Attribute.String;
     cast: Attribute.String;
@@ -994,6 +984,9 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
         'wavveOnly'
       ]
     >;
+    ownerAvatar: Attribute.String;
+    posterDefault: Attribute.Text;
+    posterOther: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
