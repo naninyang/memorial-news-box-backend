@@ -990,7 +990,8 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
         'netflixAnimeFilm',
         'tvingOriginal',
         'watchaOriginal',
-        'wavveOriginal'
+        'wavveOriginal',
+        'wavveOnly'
       ]
     >;
     createdAt: Attribute.DateTime;

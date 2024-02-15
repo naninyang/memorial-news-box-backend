@@ -94,7 +94,8 @@
         "netflixAnimeFilm",
         "tvingOriginal",
         "watchaOriginal",
-        "wavveOriginal"
+        "wavveOriginal",
+        "wavveOnly"
       ]
     }
   }
