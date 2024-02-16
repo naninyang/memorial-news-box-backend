@@ -95,6 +95,9 @@
     },
     "posterOther": {
       "type": "text"
+    },
+    "comment": {
+      "type": "text"
     }
   }
 }

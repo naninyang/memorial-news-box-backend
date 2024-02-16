@@ -987,6 +987,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     ownerAvatar: Attribute.String;
     posterDefault: Attribute.Text;
     posterOther: Attribute.Text;
+    comment: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
