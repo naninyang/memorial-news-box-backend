@@ -1,0 +1,133 @@
+{
+  "kind": "collectionType",
+  "collectionName": "amusement_jejeups",
+  "info": {
+    "singularName": "amusement-jejeup",
+    "pluralName": "amusement-jejeups",
+    "displayName": "Amusement Jejeup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "release": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "drama",
+        "movie",
+        "game",
+        "animation",
+        "ott",
+        "ottFilm"
+      ],
+      "required": true
+    },
+    "anime": {
+      "type": "enumeration",
+      "enum": [
+        "tva",
+        "ova",
+        "movie"
+      ]
+    },
+    "ott": {
+      "type": "enumeration",
+      "enum": [
+        "amazonOriginal",
+        "appleOriginal",
+        "appleFilm",
+        "disneyOriginal",
+        "netflixOriginal",
+        "netflixFilm",
+        "netflixAnime",
+        "netflixAnimeFilm",
+        "tvingOriginal",
+        "watchaOriginal",
+        "wavveOriginal",
+        "wavveOnly"
+      ]
+    },
+    "rating": {
+      "type": "enumeration",
+      "enum": [
+        "all",
+        "a7",
+        "b12",
+        "c15",
+        "d19"
+      ],
+      "required": true
+    },
+    "publisher": {
+      "type": "string",
+      "required": true
+    },
+    "creator": {
+      "type": "string",
+      "required": true
+    },
+    "cast": {
+      "type": "string",
+      "required": false
+    },
+    "genre": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "posterDefault": {
+      "type": "text",
+      "required": true
+    },
+    "posterOther": {
+      "type": "text"
+    },
+    "original": {
+      "type": "enumeration",
+      "enum": [
+        "animation",
+        "cartoon",
+        "drama",
+        "film",
+        "novel",
+        "webtoon"
+      ]
+    },
+    "lang": {
+      "type": "enumeration",
+      "enum": [
+        "chineseBeonche",
+        "chineseGanche",
+        "english",
+        "japanese",
+        "thai"
+      ]
+    },
+    "titleOther": {
+      "type": "string"
+    },
+    "originalAuthor": {
+      "type": "string"
+    },
+    "originTitle": {
+      "type": "string"
+    },
+    "etc": {
+      "type": "string"
+    }
+  }
+}

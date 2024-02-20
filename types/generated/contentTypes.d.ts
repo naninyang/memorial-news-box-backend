@@ -781,6 +781,79 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiAmusementJejeupAmusementJejeup
+  extends Schema.CollectionType {
+  collectionName: 'amusement_jejeups';
+  info: {
+    singularName: 'amusement-jejeup';
+    pluralName: 'amusement-jejeups';
+    displayName: 'Amusement Jejeup';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required & Attribute.Unique;
+    release: Attribute.String & Attribute.Required;
+    category: Attribute.Enumeration<
+      ['drama', 'movie', 'game', 'animation', 'ott', 'ottFilm']
+    > &
+      Attribute.Required;
+    anime: Attribute.Enumeration<['tva', 'ova', 'movie']>;
+    ott: Attribute.Enumeration<
+      [
+        'amazonOriginal',
+        'appleOriginal',
+        'appleFilm',
+        'disneyOriginal',
+        'netflixOriginal',
+        'netflixFilm',
+        'netflixAnime',
+        'netflixAnimeFilm',
+        'tvingOriginal',
+        'watchaOriginal',
+        'wavveOriginal',
+        'wavveOnly'
+      ]
+    >;
+    rating: Attribute.Enumeration<['all', 'a7', 'b12', 'c15', 'd19']> &
+      Attribute.Required;
+    publisher: Attribute.String & Attribute.Required;
+    creator: Attribute.String & Attribute.Required;
+    cast: Attribute.String;
+    genre: Attribute.String & Attribute.Required;
+    country: Attribute.String & Attribute.Required;
+    posterDefault: Attribute.Text & Attribute.Required;
+    posterOther: Attribute.Text;
+    original: Attribute.Enumeration<
+      ['animation', 'cartoon', 'drama', 'film', 'novel', 'webtoon']
+    >;
+    lang: Attribute.Enumeration<
+      ['chineseBeonche', 'chineseGanche', 'english', 'japanese', 'thai']
+    >;
+    titleOther: Attribute.String;
+    originalAuthor: Attribute.String;
+    originTitle: Attribute.String;
+    etc: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::amusement-jejeup.amusement-jejeup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::amusement-jejeup.amusement-jejeup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
   collectionName: 'contact_nol2trs';
   info: {
@@ -988,6 +1061,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     posterDefault: Attribute.Text;
     posterOther: Attribute.Text;
     comment: Attribute.Text;
+    title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1232,6 +1306,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
