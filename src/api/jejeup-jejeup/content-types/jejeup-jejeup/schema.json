@@ -18,83 +18,8 @@
     "video": {
       "type": "string"
     },
-    "description": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "drama",
-        "movie",
-        "game",
-        "animation",
-        "ott",
-        "ottFilm"
-      ]
-    },
-    "release": {
-      "type": "string"
-    },
-    "creator": {
-      "type": "string"
-    },
-    "publisher": {
-      "type": "string"
-    },
-    "country": {
-      "type": "string"
-    },
-    "genre": {
-      "type": "string"
-    },
-    "cast": {
-      "type": "string"
-    },
-    "anime": {
-      "type": "enumeration",
-      "enum": [
-        "tva",
-        "ova",
-        "movie"
-      ]
-    },
-    "rating": {
-      "type": "enumeration",
-      "enum": [
-        "all",
-        "a7",
-        "b12",
-        "c15",
-        "d19"
-      ]
-    },
-    "ott": {
-      "type": "enumeration",
-      "enum": [
-        "amazonOriginal",
-        "appleOriginal",
-        "appleFilm",
-        "disneyOriginal",
-        "netflixOriginal",
-        "netflixFilm",
-        "netflixAnime",
-        "netflixAnimeFilm",
-        "tvingOriginal",
-        "watchaOriginal",
-        "wavveOriginal",
-        "wavveOnly"
-      ]
-    },
     "ownerAvatar": {
       "type": "string"
-    },
-    "posterDefault": {
-      "type": "text"
-    },
-    "posterOther": {
-      "type": "text"
     },
     "comment": {
       "type": "text"

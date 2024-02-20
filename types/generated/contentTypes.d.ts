@@ -1029,37 +1029,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
   attributes: {
     subject: Attribute.String;
     video: Attribute.String;
-    description: Attribute.String & Attribute.Required & Attribute.Unique;
-    category: Attribute.Enumeration<
-      ['drama', 'movie', 'game', 'animation', 'ott', 'ottFilm']
-    >;
-    release: Attribute.String;
-    creator: Attribute.String;
-    publisher: Attribute.String;
-    country: Attribute.String;
-    genre: Attribute.String;
-    cast: Attribute.String;
-    anime: Attribute.Enumeration<['tva', 'ova', 'movie']>;
-    rating: Attribute.Enumeration<['all', 'a7', 'b12', 'c15', 'd19']>;
-    ott: Attribute.Enumeration<
-      [
-        'amazonOriginal',
-        'appleOriginal',
-        'appleFilm',
-        'disneyOriginal',
-        'netflixOriginal',
-        'netflixFilm',
-        'netflixAnime',
-        'netflixAnimeFilm',
-        'tvingOriginal',
-        'watchaOriginal',
-        'wavveOriginal',
-        'wavveOnly'
-      ]
-    >;
     ownerAvatar: Attribute.String;
-    posterDefault: Attribute.Text;
-    posterOther: Attribute.Text;
     comment: Attribute.Text;
     title: Attribute.String;
     createdAt: Attribute.DateTime;
