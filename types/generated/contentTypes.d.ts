@@ -887,6 +887,51 @@ export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
   };
 }
 
+export interface ApiDevelogDevelog extends Schema.CollectionType {
+  collectionName: 'develogs';
+  info: {
+    singularName: 'develog';
+    pluralName: 'develogs';
+    displayName: 'develog';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String & Attribute.Required;
+    summary: Attribute.String & Attribute.Required;
+    opengraph: Attribute.String & Attribute.Required;
+    series: Attribute.Enumeration<
+      [
+        'comparativeFrameworks',
+        'devilStyledSheets',
+        'retrospect',
+        'streetCodeFighters',
+        'unPrettymacOS',
+        'useless'
+      ]
+    >;
+    content: Attribute.RichText & Attribute.Required;
+    created: Attribute.DateTime & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::develog.develog',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::develog.develog',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiEbenumNol2TrEbenumNol2Tr extends Schema.CollectionType {
   collectionName: 'ebenum_nol2trs';
   info: {
@@ -1278,6 +1323,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
+      'api::develog.develog': ApiDevelogDevelog;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
       'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;

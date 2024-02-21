@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "develogs",
+  "info": {
+    "singularName": "develog",
+    "pluralName": "develogs",
+    "displayName": "develog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "string",
+      "required": true
+    },
+    "opengraph": {
+      "type": "string",
+      "required": true
+    },
+    "series": {
+      "type": "enumeration",
+      "enum": [
+        "comparativeFrameworks",
+        "devilStyledSheets",
+        "retrospect",
+        "streetCodeFighters",
+        "unPrettymacOS",
+        "useless"
+      ]
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "created": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
