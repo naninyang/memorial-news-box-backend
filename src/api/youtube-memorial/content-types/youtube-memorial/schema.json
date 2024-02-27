@@ -4,7 +4,8 @@
   "info": {
     "singularName": "youtube-memorial",
     "pluralName": "youtube-memorials",
-    "displayName": "Youtube Memorial"
+    "displayName": "Youtube Memorial",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,19 +13,25 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "comment": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "videoId": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "created": {
-      "type": "date"
+      "type": "date",
+      "required": true
     }
   }
 }

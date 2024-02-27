@@ -4,7 +4,8 @@
   "info": {
     "singularName": "naver-memorial",
     "pluralName": "naver-memorials",
-    "displayName": "NAVER Memorial"
+    "displayName": "NAVER Memorial",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,7 +28,8 @@
       "type": "string"
     },
     "entertainment": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "created": {
       "type": "date"

@@ -1072,11 +1072,12 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    subject: Attribute.String;
-    video: Attribute.String;
+    subject: Attribute.String & Attribute.Required;
+    video: Attribute.String & Attribute.Required & Attribute.Unique;
     ownerAvatar: Attribute.String;
     comment: Attribute.Text;
-    title: Attribute.String;
+    title: Attribute.String & Attribute.Required;
+    worst: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1124,8 +1125,9 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
         'default',
         'missing'
       ]
-    >;
-    instrument: Attribute.Boolean;
+    > &
+      Attribute.DefaultTo<'maxresdefault'>;
+    instrument: Attribute.Boolean & Attribute.DefaultTo<false>;
     cover: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1151,6 +1153,7 @@ export interface ApiNaverMemorialNaverMemorial extends Schema.CollectionType {
     singularName: 'naver-memorial';
     pluralName: 'naver-memorials';
     displayName: 'NAVER Memorial';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1161,7 +1164,7 @@ export interface ApiNaverMemorialNaverMemorial extends Schema.CollectionType {
     thumbnail: Attribute.String;
     oid: Attribute.String;
     aid: Attribute.String;
-    entertainment: Attribute.Boolean;
+    entertainment: Attribute.Boolean & Attribute.DefaultTo<false>;
     created: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1275,16 +1278,17 @@ export interface ApiYoutubeMemorialYoutubeMemorial
     singularName: 'youtube-memorial';
     pluralName: 'youtube-memorials';
     displayName: 'Youtube Memorial';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
-    comment: Attribute.Text;
-    videoId: Attribute.String;
-    created: Attribute.Date;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.Text & Attribute.Required;
+    comment: Attribute.Text & Attribute.Required;
+    videoId: Attribute.String & Attribute.Required & Attribute.Unique;
+    created: Attribute.Date & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

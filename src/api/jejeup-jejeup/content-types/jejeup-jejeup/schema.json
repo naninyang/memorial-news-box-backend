@@ -13,10 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "subject": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "video": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "ownerAvatar": {
       "type": "string"
@@ -25,7 +28,12 @@
       "type": "text"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "worst": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

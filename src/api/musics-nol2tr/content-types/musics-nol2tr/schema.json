@@ -45,10 +45,12 @@
         "mqdefault",
         "default",
         "missing"
-      ]
+      ],
+      "default": "maxresdefault"
     },
     "instrument": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "cover": {
       "type": "string"
