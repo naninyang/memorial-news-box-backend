@@ -1078,6 +1078,8 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     comment: Attribute.Text;
     title: Attribute.String & Attribute.Required;
     worst: Attribute.Boolean & Attribute.DefaultTo<false>;
+    title2: Attribute.String;
+    title3: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
