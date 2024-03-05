@@ -836,6 +836,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     originalAuthor: Attribute.String;
     originTitle: Attribute.String;
     etc: Attribute.String;
+    titleKorean: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
