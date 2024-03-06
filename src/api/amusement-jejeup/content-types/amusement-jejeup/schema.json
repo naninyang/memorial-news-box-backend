@@ -53,7 +53,9 @@
         "netflixAnime",
         "netflixAnimeFilm",
         "tvingOriginal",
+        "tvingOnly",
         "watchaOriginal",
+        "watchaExclusive",
         "wavveOriginal",
         "wavveOnly"
       ]
@@ -130,6 +132,17 @@
       "type": "string"
     },
     "titleKorean": {
+      "type": "string"
+    },
+    "synopsys": {
+      "type": "text"
+    },
+    "ratingCustom": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "ottAddr": {
       "type": "string"
     }
   }

@@ -812,7 +812,9 @@ export interface ApiAmusementJejeupAmusementJejeup
         'netflixAnime',
         'netflixAnimeFilm',
         'tvingOriginal',
+        'tvingOnly',
         'watchaOriginal',
+        'watchaExclusive',
         'wavveOriginal',
         'wavveOnly'
       ]
@@ -837,6 +839,11 @@ export interface ApiAmusementJejeupAmusementJejeup
     originTitle: Attribute.String;
     etc: Attribute.String;
     titleKorean: Attribute.String;
+    synopsys: Attribute.Text;
+    ratingCustom: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+    ottAddr: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
