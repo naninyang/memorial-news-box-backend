@@ -844,6 +844,8 @@ export interface ApiAmusementJejeupAmusementJejeup
       Attribute.Required &
       Attribute.DefaultTo<false>;
     ottAddr: Attribute.String;
+    relation1: Attribute.String;
+    relation2: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

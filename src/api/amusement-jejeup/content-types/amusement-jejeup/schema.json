@@ -144,6 +144,12 @@
     },
     "ottAddr": {
       "type": "string"
+    },
+    "relation1": {
+      "type": "string"
+    },
+    "relation2": {
+      "type": "string"
     }
   }
 }
