@@ -870,6 +870,7 @@ export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
     singularName: 'contact-nol2tr';
     pluralName: 'contact-nol2trs';
     displayName: 'Contact nol2tr';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -879,6 +880,7 @@ export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
     guestName: Attribute.String;
     guestEmail: Attribute.Email;
     content: Attribute.Text;
+    site: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

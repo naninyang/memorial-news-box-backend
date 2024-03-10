@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-nol2tr",
     "pluralName": "contact-nol2trs",
-    "displayName": "Contact nol2tr"
+    "displayName": "Contact nol2tr",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,9 @@
     },
     "content": {
       "type": "text"
+    },
+    "site": {
+      "type": "string"
     }
   }
 }
