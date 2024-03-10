@@ -1090,6 +1090,8 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     worst: Attribute.Boolean & Attribute.DefaultTo<false>;
     title2: Attribute.String;
     title3: Attribute.String;
+    relation1: Attribute.String;
+    relation2: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

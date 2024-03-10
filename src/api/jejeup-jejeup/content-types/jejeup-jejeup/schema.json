@@ -42,6 +42,12 @@
     "title3": {
       "type": "string",
       "required": false
+    },
+    "relation1": {
+      "type": "string"
+    },
+    "relation2": {
+      "type": "string"
     }
   }
 }
