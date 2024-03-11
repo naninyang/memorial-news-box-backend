@@ -825,7 +825,8 @@ export interface ApiAmusementJejeupAmusementJejeup
         'watchaOriginal',
         'watchaExclusive',
         'wavveOriginal',
-        'wavveOnly'
+        'wavveOnly',
+        'paramount'
       ]
     >;
     rating: Attribute.Enumeration<['all', 'a7', 'b12', 'c15', 'd19']> &
