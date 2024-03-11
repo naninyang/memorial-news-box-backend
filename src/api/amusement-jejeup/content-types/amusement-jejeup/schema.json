@@ -25,13 +25,13 @@
       "type": "enumeration",
       "enum": [
         "drama",
-        "movie",
+        "film",
         "game",
-        "animation",
-        "ott",
-        "ottFilm",
-        "ottAnime",
-        "ottAnimeFilm"
+        "anime",
+        "ott_drama",
+        "ott_film",
+        "ott_anime",
+        "ott_anime_film"
       ],
       "required": true
     },

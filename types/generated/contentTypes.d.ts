@@ -799,13 +799,13 @@ export interface ApiAmusementJejeupAmusementJejeup
     category: Attribute.Enumeration<
       [
         'drama',
-        'movie',
+        'film',
         'game',
-        'animation',
-        'ott',
-        'ottFilm',
-        'ottAnime',
-        'ottAnimeFilm'
+        'anime',
+        'ott_drama',
+        'ott_film',
+        'ott_anime',
+        'ott_anime_film'
       ]
     > &
       Attribute.Required;
