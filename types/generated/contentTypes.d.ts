@@ -797,7 +797,16 @@ export interface ApiAmusementJejeupAmusementJejeup
     title: Attribute.String & Attribute.Required & Attribute.Unique;
     release: Attribute.String & Attribute.Required;
     category: Attribute.Enumeration<
-      ['drama', 'movie', 'game', 'animation', 'ott', 'ottFilm']
+      [
+        'drama',
+        'movie',
+        'game',
+        'animation',
+        'ott',
+        'ottFilm',
+        'ottAnime',
+        'ottAnimeFilm'
+      ]
     > &
       Attribute.Required;
     anime: Attribute.Enumeration<['tva', 'ova', 'movie']>;

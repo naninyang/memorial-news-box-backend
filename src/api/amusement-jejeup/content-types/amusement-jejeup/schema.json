@@ -29,7 +29,9 @@
         "game",
         "animation",
         "ott",
-        "ottFilm"
+        "ottFilm",
+        "ottAnime",
+        "ottAnimeFilm"
       ],
       "required": true
     },
