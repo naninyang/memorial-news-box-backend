@@ -40,7 +40,7 @@
       "enum": [
         "tva",
         "ova",
-        "movie"
+        "film"
       ]
     },
     "ott": {

@@ -809,7 +809,7 @@ export interface ApiAmusementJejeupAmusementJejeup
       ]
     > &
       Attribute.Required;
-    anime: Attribute.Enumeration<['tva', 'ova', 'movie']>;
+    anime: Attribute.Enumeration<['tva', 'ova', 'film']>;
     ott: Attribute.Enumeration<
       [
         'amazonOriginal',
