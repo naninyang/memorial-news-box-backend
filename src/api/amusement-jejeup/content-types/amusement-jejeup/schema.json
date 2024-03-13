@@ -154,6 +154,23 @@
     },
     "relation2": {
       "type": "string"
+    },
+    "ogImg": {
+      "type": "string",
+      "required": false
+    },
+    "broadcast": {
+      "type": "enumeration",
+      "enum": [
+        "KBS1",
+        "KBS2",
+        "MBC",
+        "SBS",
+        "tvN",
+        "OCN",
+        "JTBC",
+        "ENA"
+      ]
     }
   }
 }

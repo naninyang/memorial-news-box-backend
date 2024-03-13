@@ -857,6 +857,10 @@ export interface ApiAmusementJejeupAmusementJejeup
     ottAddr: Attribute.String;
     relation1: Attribute.String;
     relation2: Attribute.String;
+    ogImg: Attribute.String;
+    broadcast: Attribute.Enumeration<
+      ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
