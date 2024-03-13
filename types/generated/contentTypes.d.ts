@@ -802,6 +802,7 @@ export interface ApiAmusementJejeupAmusementJejeup
         'film',
         'game',
         'anime',
+        'anime_film',
         'ott_drama',
         'ott_film',
         'ott_anime',
