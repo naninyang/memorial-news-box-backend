@@ -806,7 +806,8 @@ export interface ApiAmusementJejeupAmusementJejeup
         'ott_drama',
         'ott_film',
         'ott_anime',
-        'ott_anime_film'
+        'ott_anime_film',
+        'game_fan'
       ]
     > &
       Attribute.Required;
@@ -860,6 +861,14 @@ export interface ApiAmusementJejeupAmusementJejeup
     ogImg: Attribute.String;
     broadcast: Attribute.Enumeration<
       ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA']
+    >;
+    streamer: Attribute.String;
+    isMobile: Attribute.Boolean;
+    animeBroadcast1: Attribute.Enumeration<
+      ['tokyomx', 'tvtokyo', 'fujitv', 'mbs', 'tbs', 'atx', 'nippontv', 'wowow']
+    >;
+    animeBroadcast2: Attribute.Enumeration<
+      ['aniplus', 'daewon', 'anibox', 'tooniverse', 'animax']
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

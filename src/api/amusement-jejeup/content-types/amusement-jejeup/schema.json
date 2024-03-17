@@ -32,7 +32,8 @@
         "ott_drama",
         "ott_film",
         "ott_anime",
-        "ott_anime_film"
+        "ott_anime_film",
+        "game_fan"
       ],
       "required": true
     },
@@ -170,6 +171,35 @@
         "OCN",
         "JTBC",
         "ENA"
+      ]
+    },
+    "streamer": {
+      "type": "string"
+    },
+    "isMobile": {
+      "type": "boolean"
+    },
+    "animeBroadcast1": {
+      "type": "enumeration",
+      "enum": [
+        "tokyomx",
+        "tvtokyo",
+        "fujitv",
+        "mbs",
+        "tbs",
+        "atx",
+        "nippontv",
+        "wowow"
+      ]
+    },
+    "animeBroadcast2": {
+      "type": "enumeration",
+      "enum": [
+        "aniplus",
+        "daewon",
+        "anibox",
+        "tooniverse",
+        "animax"
       ]
     }
   }
