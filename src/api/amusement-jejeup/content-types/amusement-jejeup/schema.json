@@ -201,6 +201,9 @@
         "tooniverse",
         "animax"
       ]
+    },
+    "relations": {
+      "type": "string"
     }
   }
 }

@@ -48,6 +48,9 @@
     },
     "relation2": {
       "type": "string"
+    },
+    "relations": {
+      "type": "string"
     }
   }
 }

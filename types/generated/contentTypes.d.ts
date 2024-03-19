@@ -870,6 +870,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     animeBroadcast2: Attribute.Enumeration<
       ['aniplus', 'daewon', 'anibox', 'tooniverse', 'animax']
     >;
+    relations: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1118,6 +1119,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     title3: Attribute.String;
     relation1: Attribute.String;
     relation2: Attribute.String;
+    relations: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
