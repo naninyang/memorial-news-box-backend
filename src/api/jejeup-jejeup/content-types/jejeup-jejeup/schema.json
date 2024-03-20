@@ -48,6 +48,11 @@
     },
     "amusements": {
       "type": "string"
+    },
+    "isAmusements": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
