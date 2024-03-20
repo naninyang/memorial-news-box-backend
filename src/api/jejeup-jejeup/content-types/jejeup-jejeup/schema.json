@@ -45,6 +45,9 @@
     },
     "relations": {
       "type": "string"
+    },
+    "amusements": {
+      "type": "string"
     }
   }
 }

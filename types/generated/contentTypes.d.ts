@@ -1116,6 +1116,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     title2: Attribute.String;
     title3: Attribute.String;
     relations: Attribute.String;
+    amusements: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
