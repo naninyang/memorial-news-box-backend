@@ -35,14 +35,6 @@
       "type": "boolean",
       "default": false
     },
-    "title2": {
-      "type": "string",
-      "required": false
-    },
-    "title3": {
-      "type": "string",
-      "required": false
-    },
     "relations": {
       "type": "string"
     },
