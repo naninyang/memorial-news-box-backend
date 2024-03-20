@@ -856,8 +856,6 @@ export interface ApiAmusementJejeupAmusementJejeup
       Attribute.Required &
       Attribute.DefaultTo<false>;
     ottAddr: Attribute.String;
-    relation1: Attribute.String;
-    relation2: Attribute.String;
     ogImg: Attribute.String;
     broadcast: Attribute.Enumeration<
       ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA']
@@ -1117,8 +1115,6 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     worst: Attribute.Boolean & Attribute.DefaultTo<false>;
     title2: Attribute.String;
     title3: Attribute.String;
-    relation1: Attribute.String;
-    relation2: Attribute.String;
     relations: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

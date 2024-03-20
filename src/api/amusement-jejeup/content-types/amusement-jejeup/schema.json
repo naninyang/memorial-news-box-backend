@@ -150,12 +150,6 @@
     "ottAddr": {
       "type": "string"
     },
-    "relation1": {
-      "type": "string"
-    },
-    "relation2": {
-      "type": "string"
-    },
     "ogImg": {
       "type": "string",
       "required": false
