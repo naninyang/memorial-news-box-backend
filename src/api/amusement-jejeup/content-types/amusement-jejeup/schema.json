@@ -167,9 +167,6 @@
         "ENA"
       ]
     },
-    "streamer": {
-      "type": "string"
-    },
     "isMobile": {
       "type": "boolean"
     },

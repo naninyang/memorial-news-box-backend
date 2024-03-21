@@ -860,7 +860,6 @@ export interface ApiAmusementJejeupAmusementJejeup
     broadcast: Attribute.Enumeration<
       ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA']
     >;
-    streamer: Attribute.String;
     isMobile: Attribute.Boolean;
     animeBroadcast1: Attribute.Enumeration<
       ['tokyomx', 'tvtokyo', 'fujitv', 'mbs', 'tbs', 'atx', 'nippontv', 'wowow']
