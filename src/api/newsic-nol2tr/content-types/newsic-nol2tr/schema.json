@@ -60,6 +60,9 @@
         "default",
         "missing"
       ]
+    },
+    "fin": {
+      "type": "text"
     }
   }
 }

@@ -1258,6 +1258,7 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
         'missing'
       ]
     >;
+    fin: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
