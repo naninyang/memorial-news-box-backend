@@ -1120,7 +1120,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     worst: Attribute.Boolean & Attribute.DefaultTo<false>;
     relations: Attribute.String;
-    amusements: Attribute.String;
+    amusements: Attribute.String & Attribute.Required;
     isAmusements: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;

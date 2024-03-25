@@ -39,7 +39,8 @@
       "type": "string"
     },
     "amusements": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "isAmusements": {
       "type": "boolean",
