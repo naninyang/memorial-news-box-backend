@@ -1154,11 +1154,11 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    music: Attribute.String;
-    videoid: Attribute.String;
+    music: Attribute.String & Attribute.Required;
+    videoid: Attribute.String & Attribute.Required;
     artist: Attribute.String;
-    album: Attribute.String;
-    composer: Attribute.String;
+    album: Attribute.String & Attribute.Required;
+    composer: Attribute.String & Attribute.Required;
     lyricist: Attribute.String;
     lyrics: Attribute.Text;
     start: Attribute.Integer;
@@ -1172,9 +1172,16 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
         'missing'
       ]
     > &
+      Attribute.Required &
       Attribute.DefaultTo<'maxresdefault'>;
-    instrument: Attribute.Boolean & Attribute.DefaultTo<false>;
+    instrument: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
     cover: Attribute.String;
+    syncedLyrics: Attribute.JSON;
+    lrcCompleted: Attribute.Boolean;
+    isMV: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    isCC: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

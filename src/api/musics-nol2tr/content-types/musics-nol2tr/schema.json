@@ -13,19 +13,23 @@
   "pluginOptions": {},
   "attributes": {
     "music": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "videoid": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "artist": {
       "type": "string"
     },
     "album": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "composer": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "lyricist": {
       "type": "string"
@@ -46,14 +50,32 @@
         "default",
         "missing"
       ],
-      "default": "maxresdefault"
+      "default": "maxresdefault",
+      "required": true
     },
     "instrument": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "required": true
     },
     "cover": {
       "type": "string"
+    },
+    "syncedLyrics": {
+      "type": "json"
+    },
+    "lrcCompleted": {
+      "type": "boolean"
+    },
+    "isMV": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "isCC": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
