@@ -1167,6 +1167,7 @@ export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
         'maxresdefault',
         'sddefault',
         'hqdefault',
+        'hq720',
         'mqdefault',
         'default',
         'missing'
