@@ -1326,6 +1326,37 @@ export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
   };
 }
 
+export interface ApiUnpublishJejeupUnpublishJejeup
+  extends Schema.CollectionType {
+  collectionName: 'unpublish_jejeups';
+  info: {
+    singularName: 'unpublish-jejeup';
+    pluralName: 'unpublish-jejeups';
+    displayName: 'unpublish jejeup';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    videoId: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::unpublish-jejeup.unpublish-jejeup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::unpublish-jejeup.unpublish-jejeup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiYoutubeMemorialYoutubeMemorial
   extends Schema.CollectionType {
   collectionName: 'youtube_memorials';
@@ -1391,6 +1422,7 @@ declare module '@strapi/types' {
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;
       'api::notice-nol2tr.notice-nol2tr': ApiNoticeNol2TrNoticeNol2Tr;
+      'api::unpublish-jejeup.unpublish-jejeup': ApiUnpublishJejeupUnpublishJejeup;
       'api::youtube-memorial.youtube-memorial': ApiYoutubeMemorialYoutubeMemorial;
     }
   }

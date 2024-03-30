@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unpublish_jejeups",
+  "info": {
+    "singularName": "unpublish-jejeup",
+    "pluralName": "unpublish-jejeups",
+    "displayName": "unpublish jejeup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoId": {
+      "type": "string"
+    }
+  }
+}
