@@ -1333,12 +1333,14 @@ export interface ApiUnpublishJejeupUnpublishJejeup
     singularName: 'unpublish-jejeup';
     pluralName: 'unpublish-jejeups';
     displayName: 'unpublish jejeup';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     videoId: Attribute.String;
+    amusementId: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

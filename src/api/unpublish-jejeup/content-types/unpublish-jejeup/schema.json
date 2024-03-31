@@ -4,7 +4,8 @@
   "info": {
     "singularName": "unpublish-jejeup",
     "pluralName": "unpublish-jejeups",
-    "displayName": "unpublish jejeup"
+    "displayName": "unpublish jejeup",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "videoId": {
+      "type": "string"
+    },
+    "amusementId": {
       "type": "string"
     }
   }
