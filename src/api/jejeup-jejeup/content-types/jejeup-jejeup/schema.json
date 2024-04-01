@@ -46,6 +46,10 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "embeddingOff": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

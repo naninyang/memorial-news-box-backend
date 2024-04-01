@@ -1124,6 +1124,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     isAmusements: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
+    embeddingOff: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
