@@ -1342,6 +1342,7 @@ export interface ApiUnpublishJejeupUnpublishJejeup
   attributes: {
     videoId: Attribute.String;
     amusementId: Attribute.String;
+    site: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

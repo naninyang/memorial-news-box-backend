@@ -17,6 +17,9 @@
     },
     "amusementId": {
       "type": "string"
+    },
+    "site": {
+      "type": "string"
     }
   }
 }
