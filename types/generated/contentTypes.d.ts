@@ -848,7 +848,15 @@ export interface ApiAmusementJejeupAmusementJejeup
     posterDefault: Attribute.Text & Attribute.Required;
     posterOther: Attribute.Text;
     original: Attribute.Enumeration<
-      ['animation', 'cartoon', 'drama', 'film', 'novel', 'webtoon']
+      [
+        'animation',
+        'cartoon',
+        'drama',
+        'film',
+        'novel',
+        'lightNovel',
+        'webtoon'
+      ]
     >;
     lang: Attribute.Enumeration<
       ['chineseBeonche', 'chineseGanche', 'english', 'japanese', 'thai']
