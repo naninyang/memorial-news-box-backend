@@ -196,6 +196,9 @@
     },
     "relations": {
       "type": "string"
+    },
+    "order": {
+      "type": "string"
     }
   }
 }

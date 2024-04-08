@@ -883,6 +883,7 @@ export interface ApiAmusementJejeupAmusementJejeup
       ['aniplus', 'daewon', 'anibox', 'tooniverse', 'animax']
     >;
     relations: Attribute.String;
+    order: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
