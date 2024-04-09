@@ -858,7 +858,8 @@ export interface ApiAmusementJejeupAmusementJejeup
         'webtoon',
         'game',
         'fairytale',
-        'memoirs'
+        'memoirs',
+        'music'
       ]
     >;
     lang: Attribute.Enumeration<
