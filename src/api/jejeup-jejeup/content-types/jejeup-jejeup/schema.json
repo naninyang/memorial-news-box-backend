@@ -24,9 +24,6 @@
     "ownerAvatar": {
       "type": "string"
     },
-    "comment": {
-      "type": "text"
-    },
     "title": {
       "type": "string",
       "required": true

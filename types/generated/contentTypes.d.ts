@@ -1129,7 +1129,6 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     subject: Attribute.String & Attribute.Required;
     video: Attribute.String & Attribute.Required & Attribute.Unique;
     ownerAvatar: Attribute.String;
-    comment: Attribute.Text;
     title: Attribute.String & Attribute.Required;
     worst: Attribute.Boolean & Attribute.DefaultTo<false>;
     relations: Attribute.String;
