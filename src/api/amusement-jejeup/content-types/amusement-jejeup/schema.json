@@ -112,7 +112,10 @@
         "film",
         "novel",
         "lightNovel",
-        "webtoon"
+        "webtoon",
+        "game",
+        "fairytale",
+        "memoirs"
       ]
     },
     "lang": {
