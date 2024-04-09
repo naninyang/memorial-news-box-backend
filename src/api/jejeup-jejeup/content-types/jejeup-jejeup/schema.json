@@ -50,6 +50,9 @@
     "embeddingOff": {
       "type": "boolean",
       "default": false
+    },
+    "review": {
+      "type": "blocks"
     }
   }
 }

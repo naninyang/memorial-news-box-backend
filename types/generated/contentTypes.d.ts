@@ -1137,6 +1137,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
       Attribute.Required &
       Attribute.DefaultTo<false>;
     embeddingOff: Attribute.Boolean & Attribute.DefaultTo<false>;
+    review: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
