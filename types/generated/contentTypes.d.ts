@@ -829,6 +829,7 @@ export interface ApiAmusementJejeupAmusementJejeup
         'netflixFilm',
         'netflixAnime',
         'netflixAnimeFilm',
+        'netflixDocumentary',
         'tvingOriginal',
         'tvingOnly',
         'watchaOriginal',
