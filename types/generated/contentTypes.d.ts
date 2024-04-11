@@ -814,6 +814,8 @@ export interface ApiAmusementJejeupAmusementJejeup
         'ott_film',
         'ott_anime',
         'ott_anime_film',
+        'ott_documentary',
+        'ott_documentary_film',
         'game_fan'
       ]
     > &
