@@ -869,7 +869,14 @@ export interface ApiAmusementJejeupAmusementJejeup
       ]
     >;
     lang: Attribute.Enumeration<
-      ['chineseBeonche', 'chineseGanche', 'english', 'japanese', 'thai']
+      [
+        'chineseBeonche',
+        'chineseGanche',
+        'english',
+        'japanese',
+        'thai',
+        'europe'
+      ]
     >;
     titleOther: Attribute.String;
     originalAuthor: Attribute.String;
