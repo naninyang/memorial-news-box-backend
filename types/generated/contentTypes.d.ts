@@ -901,6 +901,23 @@ export interface ApiAmusementJejeupAmusementJejeup
     >;
     relations: Attribute.String;
     order: Attribute.String;
+    tag: Attribute.Enumeration<
+      [
+        'isekai',
+        'timeslip',
+        'anomalies',
+        'apocalypse',
+        'picaresca',
+        'horrorDrama',
+        'horrorAnime',
+        'horrorAnimeFilm',
+        'horrorFilm',
+        'horrorGame'
+      ]
+    >;
+    isHealing: Attribute.Boolean;
+    isGL: Attribute.Boolean;
+    isQueer: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

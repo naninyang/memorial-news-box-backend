@@ -210,6 +210,30 @@
     },
     "order": {
       "type": "string"
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "isekai",
+        "timeslip",
+        "anomalies",
+        "apocalypse",
+        "picaresca",
+        "horrorDrama",
+        "horrorAnime",
+        "horrorAnimeFilm",
+        "horrorFilm",
+        "horrorGame"
+      ]
+    },
+    "isHealing": {
+      "type": "boolean"
+    },
+    "isGL": {
+      "type": "boolean"
+    },
+    "isQueer": {
+      "type": "boolean"
     }
   }
 }
