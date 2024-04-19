@@ -234,6 +234,26 @@
     },
     "isQueer": {
       "type": "boolean"
+    },
+    "tags": {
+      "type": "customField",
+      "options": [
+        "mobile",
+        "game",
+        "drama",
+        "anime",
+        "film",
+        "healing",
+        "yuri",
+        "queer",
+        "isekai",
+        "timeslip",
+        "anomalies",
+        "apocalypse",
+        "picaresca",
+        "horror"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }

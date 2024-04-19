@@ -918,6 +918,26 @@ export interface ApiAmusementJejeupAmusementJejeup
     isHealing: Attribute.Boolean;
     isGL: Attribute.Boolean;
     isQueer: Attribute.Boolean;
+    tags: Attribute.JSON &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        [
+          'mobile',
+          'game',
+          'drama',
+          'anime',
+          'film',
+          'healing',
+          'yuri',
+          'queer',
+          'isekai',
+          'timeslip',
+          'anomalies',
+          'apocalypse',
+          'picaresca',
+          'horror'
+        ]
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

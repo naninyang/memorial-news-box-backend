@@ -29,6 +29,9 @@ dependencies:
   react-router-dom:
     specifier: 5.3.4
     version: 5.3.4(react@18.2.0)
+  strapi-plugin-multi-select:
+    specifier: ^1.2.3
+    version: 1.2.3(@strapi/strapi@4.21.0)
   styled-components:
     specifier: 5.3.3
     version: 5.3.3(@babel/core@7.23.7)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
@@ -9691,6 +9694,14 @@ packages:
   /statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /strapi-plugin-multi-select@1.2.3(@strapi/strapi@4.21.0):
+    resolution: {integrity: sha512-l5y5N3Hi1RcfRAtmQcAIn5u81amAQ+azWKgLcdzI1i3Hm5AZRCcZbtNDXb4ETsZUw7jvktRrD7F5QYOwzc8fiw==}
+    peerDependencies:
+      '@strapi/strapi': ^4.4.0
+    dependencies:
+      '@strapi/strapi': 4.21.0(@babel/runtime@7.23.8)(@codemirror/autocomplete@6.11.1)(@codemirror/language@6.10.0)(@codemirror/lint@6.4.2)(@codemirror/search@6.5.5)(@codemirror/state@6.4.0)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.23.0)(@types/node@20.11.0)(codemirror@6.0.1)(mysql2@3.7.0)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(redux@4.2.1)(scheduler@0.23.0)(styled-components@5.3.3)
     dev: false
 
   /stream-chain@2.2.5:
