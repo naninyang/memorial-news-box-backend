@@ -890,7 +890,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     ottAddr: Attribute.String;
     ogImg: Attribute.String;
     broadcast: Attribute.Enumeration<
-      ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA']
+      ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA', 'ABC']
     >;
     isMobile: Attribute.Boolean;
     animeBroadcast1: Attribute.Enumeration<
