@@ -901,23 +901,6 @@ export interface ApiAmusementJejeupAmusementJejeup
     >;
     relations: Attribute.String;
     order: Attribute.String;
-    tag: Attribute.Enumeration<
-      [
-        'isekai',
-        'timeslip',
-        'anomalies',
-        'apocalypse',
-        'picaresca',
-        'horrorDrama',
-        'horrorAnime',
-        'horrorAnimeFilm',
-        'horrorFilm',
-        'horrorGame'
-      ]
-    >;
-    isHealing: Attribute.Boolean;
-    isGL: Attribute.Boolean;
-    isQueer: Attribute.Boolean;
     tags: Attribute.JSON &
       Attribute.CustomField<
         'plugin::multi-select.multi-select',
@@ -938,6 +921,7 @@ export interface ApiAmusementJejeupAmusementJejeup
           'horror'
         ]
       >;
+    related: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
