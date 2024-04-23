@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "subject": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "vid": {
       "type": "string"
@@ -28,25 +29,30 @@
       "type": "string"
     },
     "summary": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
     },
     "interviewer": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "interviewee": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "naver": {
       "type": "boolean"
     },
     "music": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "created": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "platform": {
       "type": "enumeration",
@@ -54,7 +60,8 @@
         "youtube",
         "naverNews",
         "naverEntertainment"
-      ]
+      ],
+      "required": true
     },
     "opengraph": {
       "type": "string"
@@ -69,6 +76,13 @@
         "default",
         "missing"
       ]
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    },
+    "fin": {
+      "type": "string"
     }
   }
 }

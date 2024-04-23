@@ -1104,21 +1104,22 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
     draftAndPublish: true;
   };
   attributes: {
-    subject: Attribute.String;
+    subject: Attribute.String & Attribute.Required;
     vid: Attribute.String;
     oid: Attribute.String;
     aid: Attribute.String;
     thumbnail: Attribute.String;
-    summary: Attribute.String;
+    summary: Attribute.String & Attribute.Required;
     description: Attribute.Text;
-    interviewer: Attribute.String;
-    interviewee: Attribute.String;
+    interviewer: Attribute.String & Attribute.Required;
+    interviewee: Attribute.String & Attribute.Required;
     naver: Attribute.Boolean;
-    music: Attribute.String;
-    created: Attribute.Date;
+    music: Attribute.String & Attribute.Required;
+    created: Attribute.Date & Attribute.Required;
     platform: Attribute.Enumeration<
       ['youtube', 'naverNews', 'naverEntertainment']
-    >;
+    > &
+      Attribute.Required;
     opengraph: Attribute.String;
     vi: Attribute.Enumeration<
       [
@@ -1130,6 +1131,8 @@ export interface ApiInterviewNol2TrInterviewNol2Tr
         'missing'
       ]
     >;
+    content: Attribute.Blocks & Attribute.Required;
+    fin: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1298,18 +1301,20 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    subject: Attribute.String;
+    subject: Attribute.String & Attribute.Required;
     vid: Attribute.String;
     oid: Attribute.String;
     aid: Attribute.String;
     thumbnail: Attribute.String;
-    summary: Attribute.String;
+    summary: Attribute.String & Attribute.Required;
     description: Attribute.Text;
-    music: Attribute.String;
-    created: Attribute.Date;
+    music: Attribute.String & Attribute.Required;
+    created: Attribute.Date & Attribute.Required;
     platform: Attribute.Enumeration<
       ['youtube', 'naverNews', 'naverEntertainment']
-    >;
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'youtube'>;
     opengraph: Attribute.String;
     vi: Attribute.Enumeration<
       [
@@ -1322,6 +1327,7 @@ export interface ApiNewsicNol2TrNewsicNol2Tr extends Schema.CollectionType {
       ]
     >;
     fin: Attribute.Text;
+    content: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
