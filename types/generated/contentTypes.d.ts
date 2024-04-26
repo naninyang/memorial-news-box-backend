@@ -918,7 +918,11 @@ export interface ApiAmusementJejeupAmusementJejeup
           'anomalies',
           'apocalypse',
           'picaresca',
-          'horror'
+          'horror',
+          'strategy',
+          'backroom',
+          'simulation',
+          'relife'
         ]
       >;
     related: Attribute.JSON;

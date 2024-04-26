@@ -228,7 +228,11 @@
         "anomalies",
         "apocalypse",
         "picaresca",
-        "horror"
+        "horror",
+        "strategy",
+        "backroom",
+        "simulation",
+        "relife"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
