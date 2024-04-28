@@ -238,6 +238,17 @@
     },
     "related": {
       "type": "json"
+    },
+    "supportLang": {
+      "type": "customField",
+      "options": [
+        "subtitle",
+        "unofficial",
+        "dubbing",
+        "cc",
+        "description"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }

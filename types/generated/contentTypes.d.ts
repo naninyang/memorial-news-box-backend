@@ -926,6 +926,11 @@ export interface ApiAmusementJejeupAmusementJejeup
         ]
       >;
     related: Attribute.JSON;
+    supportLang: Attribute.JSON &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['subtitle', 'unofficial', 'dubbing', 'cc', 'description']
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
