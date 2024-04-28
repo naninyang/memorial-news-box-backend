@@ -13,13 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "subject": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
     },
     "created": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "platform": {
       "type": "enumeration",
@@ -28,7 +30,12 @@
         "memorial",
         "nol2tr",
         "jejeup"
-      ]
+      ],
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
     }
   }
 }

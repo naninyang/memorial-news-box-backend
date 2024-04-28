@@ -1367,10 +1367,14 @@ export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    subject: Attribute.String;
+    subject: Attribute.String & Attribute.Required;
     description: Attribute.Text;
-    created: Attribute.Date;
-    platform: Attribute.Enumeration<['shorts', 'memorial', 'nol2tr', 'jejeup']>;
+    created: Attribute.Date & Attribute.Required;
+    platform: Attribute.Enumeration<
+      ['shorts', 'memorial', 'nol2tr', 'jejeup']
+    > &
+      Attribute.Required;
+    content: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
