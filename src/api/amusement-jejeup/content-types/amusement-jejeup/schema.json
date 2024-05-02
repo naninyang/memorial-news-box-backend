@@ -249,6 +249,9 @@
         "description"
       ],
       "customField": "plugin::multi-select.multi-select"
+    },
+    "comment": {
+      "type": "text"
     }
   }
 }

@@ -931,6 +931,7 @@ export interface ApiAmusementJejeupAmusementJejeup
         'plugin::multi-select.multi-select',
         ['subtitle', 'unofficial', 'dubbing', 'cc', 'description']
       >;
+    comment: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
