@@ -252,6 +252,9 @@
     },
     "comment": {
       "type": "text"
+    },
+    "runningTime": {
+      "type": "integer"
     }
   }
 }

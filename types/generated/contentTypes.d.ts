@@ -932,6 +932,7 @@ export interface ApiAmusementJejeupAmusementJejeup
         ['subtitle', 'unofficial', 'dubbing', 'cc', 'description']
       >;
     comment: Attribute.Text;
+    runningTime: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
