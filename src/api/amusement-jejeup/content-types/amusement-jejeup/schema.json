@@ -91,7 +91,7 @@
       "required": true
     },
     "cast": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "genre": {
@@ -257,10 +257,10 @@
       "type": "integer"
     },
     "dubbing": {
-      "type": "string"
+      "type": "text"
     },
     "characters": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

@@ -848,7 +848,7 @@ export interface ApiAmusementJejeupAmusementJejeup
       Attribute.Required;
     publisher: Attribute.String & Attribute.Required;
     creator: Attribute.String & Attribute.Required;
-    cast: Attribute.String;
+    cast: Attribute.Text;
     genre: Attribute.String & Attribute.Required;
     country: Attribute.String & Attribute.Required;
     posterDefault: Attribute.Text & Attribute.Required;
@@ -933,8 +933,8 @@ export interface ApiAmusementJejeupAmusementJejeup
       >;
     comment: Attribute.Text;
     runningTime: Attribute.Integer;
-    dubbing: Attribute.String;
-    characters: Attribute.String;
+    dubbing: Attribute.Text;
+    characters: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
