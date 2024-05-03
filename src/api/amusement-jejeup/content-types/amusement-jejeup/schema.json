@@ -258,6 +258,9 @@
     },
     "dubbing": {
       "type": "string"
+    },
+    "characters": {
+      "type": "string"
     }
   }
 }
