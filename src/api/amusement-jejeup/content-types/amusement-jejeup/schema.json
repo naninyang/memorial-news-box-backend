@@ -261,6 +261,13 @@
     },
     "characters": {
       "type": "text"
+    },
+    "dubbingLang": {
+      "type": "enumeration",
+      "enum": [
+        "japanese",
+        "english"
+      ]
     }
   }
 }

@@ -935,6 +935,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     runningTime: Attribute.Integer;
     dubbing: Attribute.Text;
     characters: Attribute.Text;
+    dubbingLang: Attribute.Enumeration<['japanese', 'english']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
