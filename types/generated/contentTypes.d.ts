@@ -933,6 +933,7 @@ export interface ApiAmusementJejeupAmusementJejeup
       >;
     comment: Attribute.Text;
     runningTime: Attribute.Integer;
+    dubbing: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

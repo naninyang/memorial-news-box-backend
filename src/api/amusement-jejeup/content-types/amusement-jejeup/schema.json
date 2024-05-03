@@ -255,6 +255,9 @@
     },
     "runningTime": {
       "type": "integer"
+    },
+    "dubbing": {
+      "type": "string"
     }
   }
 }
