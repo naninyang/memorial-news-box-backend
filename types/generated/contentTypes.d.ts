@@ -936,6 +936,9 @@ export interface ApiAmusementJejeupAmusementJejeup
     dubbing: Attribute.Text;
     characters: Attribute.Text;
     dubbingLang: Attribute.Enumeration<['japanese', 'english']>;
+    studio: Attribute.String;
+    distributor: Attribute.String;
+    director: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -268,6 +268,15 @@
         "japanese",
         "english"
       ]
+    },
+    "studio": {
+      "type": "string"
+    },
+    "distributor": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
     }
   }
 }
