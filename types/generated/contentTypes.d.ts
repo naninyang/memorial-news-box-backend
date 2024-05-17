@@ -939,6 +939,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     studio: Attribute.String;
     distributor: Attribute.String;
     director: Attribute.String;
+    bfree: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

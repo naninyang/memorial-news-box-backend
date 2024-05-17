@@ -277,6 +277,9 @@
     },
     "director": {
       "type": "string"
+    },
+    "bfree": {
+      "type": "json"
     }
   }
 }
