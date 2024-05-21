@@ -958,6 +958,43 @@ export interface ApiAmusementJejeupAmusementJejeup
   };
 }
 
+export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
+  collectionName: 'banner_semoviews';
+  info: {
+    singularName: 'banner-semoview';
+    pluralName: 'banner-semoviews';
+    displayName: 'Banner Semoview';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    link: Attribute.String;
+    description: Attribute.String;
+    author: Attribute.String;
+    title: Attribute.String;
+    color: Attribute.String;
+    order: Attribute.Integer;
+    isLight: Attribute.Boolean & Attribute.DefaultTo<true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::banner-semoview.banner-semoview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::banner-semoview.banner-semoview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
   collectionName: 'contact_nol2trs';
   info: {
@@ -1491,6 +1528,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
+      'api::banner-semoview.banner-semoview': ApiBannerSemoviewBannerSemoview;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::develog.develog': ApiDevelogDevelog;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;

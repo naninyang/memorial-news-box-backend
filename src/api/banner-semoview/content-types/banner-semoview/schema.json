@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_semoviews",
+  "info": {
+    "singularName": "banner-semoview",
+    "pluralName": "banner-semoviews",
+    "displayName": "Banner Semoview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "isLight": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
