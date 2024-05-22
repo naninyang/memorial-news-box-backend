@@ -33,6 +33,18 @@
     "isLight": {
       "type": "boolean",
       "default": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "drama",
+        "film",
+        "anime",
+        "ott",
+        "game",
+        "game_fan",
+        "barrier_free"
+      ]
     }
   }
 }

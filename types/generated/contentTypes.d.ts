@@ -977,6 +977,9 @@ export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
     color: Attribute.String;
     order: Attribute.Integer;
     isLight: Attribute.Boolean & Attribute.DefaultTo<true>;
+    type: Attribute.Enumeration<
+      ['drama', 'film', 'anime', 'ott', 'game', 'game_fan', 'barrier_free']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
