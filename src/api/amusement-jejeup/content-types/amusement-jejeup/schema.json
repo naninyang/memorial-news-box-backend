@@ -280,6 +280,12 @@
     },
     "bfree": {
       "type": "json"
+    },
+    "series": {
+      "type": "integer"
+    },
+    "season": {
+      "type": "string"
     }
   }
 }
