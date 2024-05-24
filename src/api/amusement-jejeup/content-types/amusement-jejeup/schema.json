@@ -286,6 +286,9 @@
     },
     "season": {
       "type": "string"
+    },
+    "franchise": {
+      "type": "string"
     }
   }
 }

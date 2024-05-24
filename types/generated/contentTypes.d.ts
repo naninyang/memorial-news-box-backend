@@ -942,6 +942,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     bfree: Attribute.JSON;
     series: Attribute.Integer;
     season: Attribute.String;
+    franchise: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
