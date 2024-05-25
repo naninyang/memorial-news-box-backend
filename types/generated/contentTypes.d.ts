@@ -943,6 +943,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     series: Attribute.Integer;
     season: Attribute.String;
     franchise: Attribute.String;
+    relName: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1254,6 +1255,38 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
   };
 }
 
+export interface ApiLiteratureSemoviewLiteratureSemoview
+  extends Schema.CollectionType {
+  collectionName: 'literature_semoviews';
+  info: {
+    singularName: 'literature-semoview';
+    pluralName: 'literature-semoviews';
+    displayName: 'Literature-semoview';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    description: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::literature-semoview.literature-semoview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::literature-semoview.literature-semoview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiMusicsNol2TrMusicsNol2Tr extends Schema.CollectionType {
   collectionName: 'musics_nol2trs';
   info: {
@@ -1541,6 +1574,7 @@ declare module '@strapi/types' {
       'api::editorial-memorial.editorial-memorial': ApiEditorialMemorialEditorialMemorial;
       'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;
       'api::jejeup-jejeup.jejeup-jejeup': ApiJejeupJejeupJejeupJejeup;
+      'api::literature-semoview.literature-semoview': ApiLiteratureSemoviewLiteratureSemoview;
       'api::musics-nol2tr.musics-nol2tr': ApiMusicsNol2TrMusicsNol2Tr;
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;

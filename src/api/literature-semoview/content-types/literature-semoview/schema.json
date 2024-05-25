@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "literature_semoviews",
+  "info": {
+    "singularName": "literature-semoview",
+    "pluralName": "literature-semoviews",
+    "displayName": "Literature-semoview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
