@@ -1262,6 +1262,7 @@ export interface ApiLiteratureSemoviewLiteratureSemoview
     singularName: 'literature-semoview';
     pluralName: 'literature-semoviews';
     displayName: 'Literature-semoview';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1269,6 +1270,7 @@ export interface ApiLiteratureSemoviewLiteratureSemoview
   attributes: {
     subject: Attribute.String;
     description: Attribute.String;
+    type: Attribute.Enumeration<['relations', 'franchise']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

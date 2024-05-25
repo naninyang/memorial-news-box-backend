@@ -4,7 +4,8 @@
   "info": {
     "singularName": "literature-semoview",
     "pluralName": "literature-semoviews",
-    "displayName": "Literature-semoview"
+    "displayName": "Literature-semoview",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,13 @@
     },
     "description": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "relations",
+        "franchise"
+      ]
     }
   }
 }
