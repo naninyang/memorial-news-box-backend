@@ -24,6 +24,10 @@
         "relations",
         "franchise"
       ]
+    },
+    "isGame": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

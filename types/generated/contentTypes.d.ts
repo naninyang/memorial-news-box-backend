@@ -1271,6 +1271,7 @@ export interface ApiLiteratureSemoviewLiteratureSemoview
     subject: Attribute.String;
     description: Attribute.String;
     type: Attribute.Enumeration<['relations', 'franchise']>;
+    isGame: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
