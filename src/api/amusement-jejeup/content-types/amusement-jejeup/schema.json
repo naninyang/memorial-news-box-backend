@@ -292,6 +292,15 @@
     },
     "relName": {
       "type": "string"
+    },
+    "logoSize": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "half",
+        "double"
+      ],
+      "default": "default"
     }
   }
 }

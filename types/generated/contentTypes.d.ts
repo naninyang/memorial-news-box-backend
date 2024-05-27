@@ -944,6 +944,8 @@ export interface ApiAmusementJejeupAmusementJejeup
     season: Attribute.String;
     franchise: Attribute.String;
     relName: Attribute.String;
+    logoSize: Attribute.Enumeration<['default', 'half', 'double']> &
+      Attribute.DefaultTo<'default'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
