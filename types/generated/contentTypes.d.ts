@@ -841,6 +841,8 @@ export interface ApiAmusementJejeupAmusementJejeup
         'watchaExclusive',
         'wavveOriginal',
         'wavveOnly',
+        'waveOnly',
+        'waveFirstrun',
         'paramount'
       ]
     >;
@@ -946,6 +948,11 @@ export interface ApiAmusementJejeupAmusementJejeup
     relName: Attribute.String;
     logoSize: Attribute.Enumeration<['default', 'half', 'double']> &
       Attribute.DefaultTo<'default'>;
+    wavveSeries: Attribute.JSON &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['bbc', 'hbomax', 'hulu', 'nbc', 'peacock', 'sky', 'syfy']
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1499,6 +1506,7 @@ export interface ApiUnpublishJejeupUnpublishJejeup
     videoId: Attribute.String;
     amusementId: Attribute.String;
     site: Attribute.String;
+    comment: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

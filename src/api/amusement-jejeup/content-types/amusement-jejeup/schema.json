@@ -68,6 +68,8 @@
         "watchaExclusive",
         "wavveOriginal",
         "wavveOnly",
+        "waveOnly",
+        "waveFirstrun",
         "paramount"
       ]
     },
@@ -301,6 +303,19 @@
         "double"
       ],
       "default": "default"
+    },
+    "wavveSeries": {
+      "type": "customField",
+      "options": [
+        "bbc",
+        "hbomax",
+        "hulu",
+        "nbc",
+        "peacock",
+        "sky",
+        "syfy"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }

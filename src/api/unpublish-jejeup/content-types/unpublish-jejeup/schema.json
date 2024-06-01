@@ -20,6 +20,9 @@
     },
     "site": {
       "type": "string"
+    },
+    "comment": {
+      "type": "string"
     }
   }
 }
