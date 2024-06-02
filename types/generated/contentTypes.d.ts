@@ -991,7 +991,16 @@ export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
     order: Attribute.Integer;
     isLight: Attribute.Boolean & Attribute.DefaultTo<true>;
     type: Attribute.Enumeration<
-      ['drama', 'film', 'anime', 'ott', 'game', 'game_fan', 'barrier_free']
+      [
+        'drama',
+        'film',
+        'anime',
+        'ott',
+        'game',
+        'game_fan',
+        'barrier_free',
+        'wavve'
+      ]
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
