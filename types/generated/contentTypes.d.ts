@@ -971,6 +971,41 @@ export interface ApiAmusementJejeupAmusementJejeup
   };
 }
 
+export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
+  collectionName: 'banner_nol2trs';
+  info: {
+    singularName: 'banner-nol2tr';
+    pluralName: 'banner-nol2trs';
+    displayName: 'Banner Nol2tr';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    link: Attribute.String;
+    description: Attribute.String;
+    names: Attribute.JSON;
+    subject: Attribute.String;
+    type: Attribute.Enumeration<['interview', 'newsic', 'playlist']>;
+    order: Attribute.Integer;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::banner-nol2tr.banner-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::banner-nol2tr.banner-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
   collectionName: 'banner_semoviews';
   info: {
@@ -1499,6 +1534,54 @@ export interface ApiNoticeNol2TrNoticeNol2Tr extends Schema.CollectionType {
   };
 }
 
+export interface ApiPlaylistNol2TrPlaylistNol2Tr extends Schema.CollectionType {
+  collectionName: 'playlist_nol2trs';
+  info: {
+    singularName: 'playlist-nol2tr';
+    pluralName: 'playlist-nol2trs';
+    displayName: 'Playlist nol2tr';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String;
+    platform: Attribute.Enumeration<
+      ['youtube', 'naverNews', 'naverEntertainment']
+    >;
+    vid: Attribute.String;
+    vi: Attribute.String;
+    oid: Attribute.String;
+    aid: Attribute.String;
+    opengraph: Attribute.String;
+    thumbnail: Attribute.String;
+    summary: Attribute.String;
+    description: Attribute.Text;
+    interviewer: Attribute.String;
+    interviewee: Attribute.String;
+    music: Attribute.String;
+    created: Attribute.Date;
+    content: Attribute.Blocks;
+    fin: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::playlist-nol2tr.playlist-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::playlist-nol2tr.playlist-nol2tr',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiUnpublishJejeupUnpublishJejeup
   extends Schema.CollectionType {
   collectionName: 'unpublish_jejeups';
@@ -1589,6 +1672,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
+      'api::banner-nol2tr.banner-nol2tr': ApiBannerNol2TrBannerNol2Tr;
       'api::banner-semoview.banner-semoview': ApiBannerSemoviewBannerSemoview;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::develog.develog': ApiDevelogDevelog;
@@ -1601,6 +1685,7 @@ declare module '@strapi/types' {
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;
       'api::notice-nol2tr.notice-nol2tr': ApiNoticeNol2TrNoticeNol2Tr;
+      'api::playlist-nol2tr.playlist-nol2tr': ApiPlaylistNol2TrPlaylistNol2Tr;
       'api::unpublish-jejeup.unpublish-jejeup': ApiUnpublishJejeupUnpublishJejeup;
       'api::youtube-memorial.youtube-memorial': ApiYoutubeMemorialYoutubeMemorial;
     }
