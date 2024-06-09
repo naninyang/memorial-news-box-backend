@@ -23,6 +23,9 @@
     },
     "article": {
       "type": "string"
+    },
+    "music": {
+      "type": "string"
     }
   }
 }

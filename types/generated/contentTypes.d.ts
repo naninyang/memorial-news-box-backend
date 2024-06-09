@@ -1550,6 +1550,7 @@ export interface ApiPlaylistNol2TrPlaylistNol2Tr extends Schema.CollectionType {
     opengraph: Attribute.String;
     summary: Attribute.String;
     article: Attribute.String;
+    music: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
