@@ -15,54 +15,13 @@
     "subject": {
       "type": "string"
     },
-    "platform": {
-      "type": "enumeration",
-      "enum": [
-        "youtube",
-        "naverNews",
-        "naverEntertainment"
-      ]
-    },
-    "vid": {
-      "type": "string"
-    },
-    "vi": {
-      "type": "string"
-    },
-    "oid": {
-      "type": "string"
-    },
-    "aid": {
-      "type": "string"
-    },
     "opengraph": {
-      "type": "string"
-    },
-    "thumbnail": {
       "type": "string"
     },
     "summary": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
-    "interviewer": {
-      "type": "string"
-    },
-    "interviewee": {
-      "type": "string"
-    },
-    "music": {
-      "type": "string"
-    },
-    "created": {
-      "type": "date"
-    },
-    "content": {
-      "type": "blocks"
-    },
-    "fin": {
+    "article": {
       "type": "string"
     }
   }

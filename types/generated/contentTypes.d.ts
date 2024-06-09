@@ -1547,23 +1547,9 @@ export interface ApiPlaylistNol2TrPlaylistNol2Tr extends Schema.CollectionType {
   };
   attributes: {
     subject: Attribute.String;
-    platform: Attribute.Enumeration<
-      ['youtube', 'naverNews', 'naverEntertainment']
-    >;
-    vid: Attribute.String;
-    vi: Attribute.String;
-    oid: Attribute.String;
-    aid: Attribute.String;
     opengraph: Attribute.String;
-    thumbnail: Attribute.String;
     summary: Attribute.String;
-    description: Attribute.Text;
-    interviewer: Attribute.String;
-    interviewee: Attribute.String;
-    music: Attribute.String;
-    created: Attribute.Date;
-    content: Attribute.Blocks;
-    fin: Attribute.String;
+    article: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
