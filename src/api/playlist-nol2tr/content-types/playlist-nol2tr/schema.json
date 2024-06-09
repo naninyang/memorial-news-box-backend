@@ -26,6 +26,9 @@
     },
     "music": {
       "type": "string"
+    },
+    "created": {
+      "type": "date"
     }
   }
 }
