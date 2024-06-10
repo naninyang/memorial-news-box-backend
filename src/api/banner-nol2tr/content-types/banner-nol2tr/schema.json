@@ -4,7 +4,8 @@
   "info": {
     "singularName": "banner-nol2tr",
     "pluralName": "banner-nol2trs",
-    "displayName": "Banner Nol2tr"
+    "displayName": "Banner Nol2tr",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,7 @@
     "description": {
       "type": "string"
     },
-    "names": {
+    "interview": {
       "type": "json"
     },
     "subject": {
@@ -33,6 +34,9 @@
     },
     "order": {
       "type": "integer"
+    },
+    "thunbnail": {
+      "type": "text"
     }
   }
 }

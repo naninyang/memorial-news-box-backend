@@ -977,6 +977,7 @@ export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
     singularName: 'banner-nol2tr';
     pluralName: 'banner-nol2trs';
     displayName: 'Banner Nol2tr';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -984,10 +985,11 @@ export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
   attributes: {
     link: Attribute.String;
     description: Attribute.String;
-    names: Attribute.JSON;
+    interview: Attribute.JSON;
     subject: Attribute.String;
     type: Attribute.Enumeration<['interview', 'newsic', 'playlist']>;
     order: Attribute.Integer;
+    thunbnail: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
