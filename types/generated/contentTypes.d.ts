@@ -991,6 +991,7 @@ export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
     order: Attribute.Integer;
     isLTR: Attribute.Boolean & Attribute.DefaultTo<true>;
     color: Attribute.String;
+    isLight: Attribute.Boolean & Attribute.DefaultTo<true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

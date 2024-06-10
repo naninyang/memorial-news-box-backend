@@ -41,6 +41,10 @@
     },
     "color": {
       "type": "string"
+    },
+    "isLight": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
