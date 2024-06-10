@@ -989,7 +989,6 @@ export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
     subject: Attribute.String;
     type: Attribute.Enumeration<['interview', 'newsic', 'playlist']>;
     order: Attribute.Integer;
-    thunbnail: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

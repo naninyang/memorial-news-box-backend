@@ -34,9 +34,6 @@
     },
     "order": {
       "type": "integer"
-    },
-    "thunbnail": {
-      "type": "text"
     }
   }
 }
