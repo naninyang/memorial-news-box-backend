@@ -983,7 +983,7 @@ export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    link: Attribute.String;
+    idx: Attribute.String;
     description: Attribute.String;
     interview: Attribute.JSON;
     subject: Attribute.String;
