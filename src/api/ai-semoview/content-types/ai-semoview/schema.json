@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ai_semoviews",
+  "info": {
+    "singularName": "ai-semoview",
+    "pluralName": "ai-semoviews",
+    "displayName": "AI Semoview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "chloe": {
+      "type": "blocks"
+    },
+    "gpt": {
+      "type": "blocks"
+    }
+  }
+}
