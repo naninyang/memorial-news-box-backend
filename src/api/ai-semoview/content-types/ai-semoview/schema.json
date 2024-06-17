@@ -31,7 +31,8 @@
       "type": "string"
     },
     "isPublish": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }

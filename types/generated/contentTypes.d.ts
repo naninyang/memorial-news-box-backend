@@ -806,7 +806,7 @@ export interface ApiAiSemoviewAiSemoview extends Schema.CollectionType {
     gpt: Attribute.Blocks;
     fieldName: Attribute.String;
     fieldValue: Attribute.String;
-    isPublish: Attribute.Boolean;
+    isPublish: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
