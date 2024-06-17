@@ -29,6 +29,9 @@
     },
     "fieldValue": {
       "type": "string"
+    },
+    "isPublish": {
+      "type": "boolean"
     }
   }
 }
