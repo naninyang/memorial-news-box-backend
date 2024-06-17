@@ -794,6 +794,7 @@ export interface ApiAiSemoviewAiSemoview extends Schema.CollectionType {
     singularName: 'ai-semoview';
     pluralName: 'ai-semoviews';
     displayName: 'AI Semoview';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -803,6 +804,8 @@ export interface ApiAiSemoviewAiSemoview extends Schema.CollectionType {
     description: Attribute.Text;
     chloe: Attribute.Blocks;
     gpt: Attribute.Blocks;
+    fieldName: Attribute.String;
+    fieldValue: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

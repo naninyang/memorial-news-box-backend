@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ai-semoview",
     "pluralName": "ai-semoviews",
-    "displayName": "AI Semoview"
+    "displayName": "AI Semoview",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,12 @@
     },
     "gpt": {
       "type": "blocks"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "fieldValue": {
+      "type": "string"
     }
   }
 }
