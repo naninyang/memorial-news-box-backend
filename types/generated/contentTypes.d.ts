@@ -807,6 +807,7 @@ export interface ApiAiSemoviewAiSemoview extends Schema.CollectionType {
     fieldName: Attribute.String;
     fieldValue: Attribute.String;
     isPublish: Attribute.Boolean & Attribute.DefaultTo<false>;
+    question: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -990,6 +991,7 @@ export interface ApiAmusementJejeupAmusementJejeup
         'plugin::multi-select.multi-select',
         ['bbc', 'hbomax', 'hulu', 'nbc', 'peacock', 'sky', 'syfy']
       >;
+    summary: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

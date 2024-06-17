@@ -316,6 +316,9 @@
         "syfy"
       ],
       "customField": "plugin::multi-select.multi-select"
+    },
+    "summary": {
+      "type": "string"
     }
   }
 }

@@ -33,6 +33,9 @@
     "isPublish": {
       "type": "boolean",
       "default": false
+    },
+    "question": {
+      "type": "string"
     }
   }
 }
