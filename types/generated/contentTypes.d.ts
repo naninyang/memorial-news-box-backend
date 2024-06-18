@@ -1066,7 +1066,7 @@ export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
     author: Attribute.String;
     title: Attribute.String;
     color: Attribute.String;
-    order: Attribute.Integer;
+    order: Attribute.Integer & Attribute.Unique;
     isLight: Attribute.Boolean & Attribute.DefaultTo<true>;
     type: Attribute.Enumeration<
       [
@@ -1077,7 +1077,8 @@ export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
         'game',
         'game_fan',
         'barrier_free',
-        'wavve'
+        'wavve',
+        'recommends'
       ]
     >;
     createdAt: Attribute.DateTime;

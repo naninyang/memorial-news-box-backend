@@ -28,7 +28,8 @@
       "type": "string"
     },
     "order": {
-      "type": "integer"
+      "type": "integer",
+      "unique": true
     },
     "isLight": {
       "type": "boolean",
@@ -44,7 +45,8 @@
         "game",
         "game_fan",
         "barrier_free",
-        "wavve"
+        "wavve",
+        "recommends"
       ]
     }
   }
