@@ -318,9 +318,6 @@
       ],
       "customField": "plugin::multi-select.multi-select"
     },
-    "summary": {
-      "type": "string"
-    },
     "isPublish": {
       "type": "boolean",
       "default": false

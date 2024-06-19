@@ -992,7 +992,6 @@ export interface ApiAmusementJejeupAmusementJejeup
         'plugin::multi-select.multi-select',
         ['bbc', 'hbomax', 'hulu', 'nbc', 'peacock', 'sky', 'syfy']
       >;
-    summary: Attribute.String;
     isPublish: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
