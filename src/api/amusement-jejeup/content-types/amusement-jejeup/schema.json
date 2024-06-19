@@ -25,6 +25,7 @@
       "type": "enumeration",
       "enum": [
         "drama",
+        "drama_enter",
         "film",
         "game",
         "anime",

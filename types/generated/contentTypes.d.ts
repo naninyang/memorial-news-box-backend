@@ -844,6 +844,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     category: Attribute.Enumeration<
       [
         'drama',
+        'drama_enter',
         'film',
         'game',
         'anime',
