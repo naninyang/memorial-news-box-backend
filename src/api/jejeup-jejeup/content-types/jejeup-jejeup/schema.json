@@ -50,6 +50,14 @@
     },
     "review": {
       "type": "blocks"
+    },
+    "isPublish": {
+      "type": "boolean",
+      "default": false
+    },
+    "isZip": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
