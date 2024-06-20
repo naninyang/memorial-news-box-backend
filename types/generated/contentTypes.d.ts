@@ -844,12 +844,12 @@ export interface ApiAmusementJejeupAmusementJejeup
     category: Attribute.Enumeration<
       [
         'drama',
-        'drama_enter',
         'film',
         'game',
         'anime',
         'anime_film',
         'ott_drama',
+        'ott_drama_enter',
         'ott_film',
         'ott_anime',
         'ott_anime_film',
@@ -933,7 +933,7 @@ export interface ApiAmusementJejeupAmusementJejeup
     broadcast: Attribute.Enumeration<
       ['KBS1', 'KBS2', 'MBC', 'SBS', 'tvN', 'OCN', 'JTBC', 'ENA', 'ABC']
     >;
-    isMobile: Attribute.Boolean;
+    isMobile: Attribute.Boolean & Attribute.DefaultTo<false>;
     animeBroadcast1: Attribute.Enumeration<
       ['tokyomx', 'tvtokyo', 'fujitv', 'mbs', 'tbs', 'atx', 'nippontv', 'wowow']
     >;

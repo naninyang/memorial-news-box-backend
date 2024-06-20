@@ -25,12 +25,12 @@
       "type": "enumeration",
       "enum": [
         "drama",
-        "drama_enter",
         "film",
         "game",
         "anime",
         "anime_film",
         "ott_drama",
+        "ott_drama_enter",
         "ott_film",
         "ott_anime",
         "ott_anime_film",
@@ -184,7 +184,8 @@
       ]
     },
     "isMobile": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "animeBroadcast1": {
       "type": "enumeration",
