@@ -1100,6 +1100,73 @@ export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
   };
 }
 
+export interface ApiCaplAlbumCaplAlbum extends Schema.CollectionType {
+  collectionName: 'capl_albums';
+  info: {
+    singularName: 'capl-album';
+    pluralName: 'capl-albums';
+    displayName: 'Capl-album';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    release: Attribute.Integer & Attribute.Required;
+    artist: Attribute.JSON;
+    credit: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::capl-album.capl-album',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::capl-album.capl-album',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
+  collectionName: 'capl_artists';
+  info: {
+    singularName: 'capl-artist';
+    pluralName: 'capl-artists';
+    displayName: 'capl-artist';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    otherName: Attribute.String;
+    debut: Attribute.Date;
+    birth: Attribute.Date;
+    member: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::capl-artist.capl-artist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::capl-artist.capl-artist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
   collectionName: 'contact_nol2trs';
   info: {
@@ -1710,6 +1777,8 @@ declare module '@strapi/types' {
       'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
       'api::banner-nol2tr.banner-nol2tr': ApiBannerNol2TrBannerNol2Tr;
       'api::banner-semoview.banner-semoview': ApiBannerSemoviewBannerSemoview;
+      'api::capl-album.capl-album': ApiCaplAlbumCaplAlbum;
+      'api::capl-artist.capl-artist': ApiCaplArtistCaplArtist;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::develog.develog': ApiDevelogDevelog;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;

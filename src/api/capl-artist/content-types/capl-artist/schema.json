@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capl_artists",
+  "info": {
+    "singularName": "capl-artist",
+    "pluralName": "capl-artists",
+    "displayName": "capl-artist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "otherName": {
+      "type": "string"
+    },
+    "debut": {
+      "type": "date"
+    },
+    "birth": {
+      "type": "date"
+    },
+    "member": {
+      "type": "json"
+    }
+  }
+}

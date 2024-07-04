@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capl_albums",
+  "info": {
+    "singularName": "capl-album",
+    "pluralName": "capl-albums",
+    "displayName": "Capl-album"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "release": {
+      "required": true,
+      "type": "integer"
+    },
+    "artist": {
+      "type": "json"
+    },
+    "credit": {
+      "type": "json"
+    }
+  }
+}
