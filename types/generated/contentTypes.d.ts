@@ -1139,6 +1139,7 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
     singularName: 'capl-artist';
     pluralName: 'capl-artists';
     displayName: 'capl-artist';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1149,6 +1150,7 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
     debut: Attribute.Date;
     birth: Attribute.Date;
     member: Attribute.JSON;
+    group: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

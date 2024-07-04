@@ -4,7 +4,8 @@
   "info": {
     "singularName": "capl-artist",
     "pluralName": "capl-artists",
-    "displayName": "capl-artist"
+    "displayName": "capl-artist",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,9 @@
       "type": "date"
     },
     "member": {
+      "type": "json"
+    },
+    "group": {
       "type": "json"
     }
   }
