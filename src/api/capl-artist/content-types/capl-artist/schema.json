@@ -30,6 +30,14 @@
     },
     "group": {
       "type": "json"
+    },
+    "abbr": {
+      "type": "json"
+    },
+    "isSolo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

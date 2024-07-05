@@ -1151,6 +1151,8 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
     birth: Attribute.Date;
     member: Attribute.JSON;
     group: Attribute.JSON;
+    abbr: Attribute.JSON;
+    isSolo: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
