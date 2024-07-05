@@ -1138,7 +1138,7 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
   info: {
     singularName: 'capl-artist';
     pluralName: 'capl-artists';
-    displayName: 'capl-artist';
+    displayName: 'Capl-artist';
     description: '';
   };
   options: {
@@ -1162,6 +1162,46 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::capl-artist.capl-artist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCaplMusicCaplMusic extends Schema.CollectionType {
+  collectionName: 'capl_musics';
+  info: {
+    singularName: 'capl-music';
+    pluralName: 'capl-musics';
+    displayName: 'Capl-music';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    album: Attribute.Integer & Attribute.Required;
+    originMusic: Attribute.Integer;
+    originAlbum: Attribute.Integer;
+    artist: Attribute.JSON & Attribute.Required;
+    cover: Attribute.JSON;
+    composer: Attribute.JSON;
+    lyricist: Attribute.JSON;
+    musicId: Attribute.String;
+    videoId: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::capl-music.capl-music',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::capl-music.capl-music',
       'oneToOne',
       'admin::user'
     > &
@@ -1781,6 +1821,7 @@ declare module '@strapi/types' {
       'api::banner-semoview.banner-semoview': ApiBannerSemoviewBannerSemoview;
       'api::capl-album.capl-album': ApiCaplAlbumCaplAlbum;
       'api::capl-artist.capl-artist': ApiCaplArtistCaplArtist;
+      'api::capl-music.capl-music': ApiCaplMusicCaplMusic;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::develog.develog': ApiDevelogDevelog;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;

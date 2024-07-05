@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capl_musics",
+  "info": {
+    "singularName": "capl-music",
+    "pluralName": "capl-musics",
+    "displayName": "Capl-music",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "album": {
+      "type": "integer",
+      "required": true
+    },
+    "originMusic": {
+      "type": "integer"
+    },
+    "originAlbum": {
+      "type": "integer"
+    },
+    "artist": {
+      "type": "json",
+      "required": true
+    },
+    "cover": {
+      "type": "json"
+    },
+    "composer": {
+      "type": "json"
+    },
+    "lyricist": {
+      "type": "json"
+    },
+    "musicId": {
+      "type": "string"
+    },
+    "videoId": {
+      "type": "string"
+    }
+  }
+}
