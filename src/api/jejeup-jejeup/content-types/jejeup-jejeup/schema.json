@@ -58,6 +58,9 @@
     "isZip": {
       "type": "boolean",
       "default": false
+    },
+    "isLive": {
+      "type": "boolean"
     }
   }
 }

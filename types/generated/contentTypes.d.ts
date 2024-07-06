@@ -1448,6 +1448,7 @@ export interface ApiJejeupJejeupJejeupJejeup extends Schema.CollectionType {
     review: Attribute.Blocks;
     isPublish: Attribute.Boolean & Attribute.DefaultTo<false>;
     isZip: Attribute.Boolean & Attribute.DefaultTo<false>;
+    isLive: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
