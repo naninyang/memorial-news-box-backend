@@ -23,6 +23,9 @@
     },
     "comment": {
       "type": "string"
+    },
+    "reviewId": {
+      "type": "string"
     }
   }
 }

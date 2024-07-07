@@ -1746,6 +1746,7 @@ export interface ApiUnpublishJejeupUnpublishJejeup
     amusementId: Attribute.String;
     site: Attribute.String;
     comment: Attribute.String;
+    reviewId: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
