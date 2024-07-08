@@ -1211,6 +1211,38 @@ export interface ApiCaplMusicCaplMusic extends Schema.CollectionType {
   };
 }
 
+export interface ApiCaplPlaylistCaplPlaylist extends Schema.CollectionType {
+  collectionName: 'capl_playlists';
+  info: {
+    singularName: 'capl-playlist';
+    pluralName: 'capl-playlists';
+    displayName: 'Capl-playlist';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.String & Attribute.Required;
+    list: Attribute.JSON & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::capl-playlist.capl-playlist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::capl-playlist.capl-playlist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
   collectionName: 'contact_nol2trs';
   info: {
@@ -1826,6 +1858,7 @@ declare module '@strapi/types' {
       'api::capl-album.capl-album': ApiCaplAlbumCaplAlbum;
       'api::capl-artist.capl-artist': ApiCaplArtistCaplArtist;
       'api::capl-music.capl-music': ApiCaplMusicCaplMusic;
+      'api::capl-playlist.capl-playlist': ApiCaplPlaylistCaplPlaylist;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::develog.develog': ApiDevelogDevelog;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
