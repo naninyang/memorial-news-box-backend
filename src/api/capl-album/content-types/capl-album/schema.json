@@ -4,7 +4,8 @@
   "info": {
     "singularName": "capl-album",
     "pluralName": "capl-albums",
-    "displayName": "Capl-album"
+    "displayName": "Capl-album",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,9 @@
       "type": "json"
     },
     "credit": {
+      "type": "json"
+    },
+    "relationArtists": {
       "type": "json"
     }
   }
