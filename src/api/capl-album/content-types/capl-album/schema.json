@@ -28,6 +28,9 @@
     },
     "relationArtists": {
       "type": "json"
+    },
+    "albumNumbering": {
+      "type": "string"
     }
   }
 }

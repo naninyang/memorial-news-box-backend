@@ -38,6 +38,9 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "agency": {
+      "type": "string"
     }
   }
 }

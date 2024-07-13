@@ -1117,6 +1117,7 @@ export interface ApiCaplAlbumCaplAlbum extends Schema.CollectionType {
     artist: Attribute.JSON;
     credit: Attribute.JSON;
     relationArtists: Attribute.JSON;
+    albumNumbering: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1155,6 +1156,7 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
     group: Attribute.JSON;
     abbr: Attribute.JSON;
     isSolo: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    agency: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1220,6 +1222,7 @@ export interface ApiCaplPlaylistCaplPlaylist extends Schema.CollectionType {
     singularName: 'capl-playlist';
     pluralName: 'capl-playlists';
     displayName: 'Capl-playlist';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1228,6 +1231,7 @@ export interface ApiCaplPlaylistCaplPlaylist extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     description: Attribute.String & Attribute.Required;
     list: Attribute.JSON & Attribute.Required;
+    tags: Attribute.JSON & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
