@@ -1118,6 +1118,24 @@ export interface ApiCaplAlbumCaplAlbum extends Schema.CollectionType {
     credit: Attribute.JSON;
     relationArtists: Attribute.JSON;
     albumNumbering: Attribute.String;
+    list: Attribute.JSON & Attribute.Required;
+    relationStaffs: Attribute.JSON;
+    genre: Attribute.JSON &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        [
+          'electronic',
+          'dance',
+          'hiphop',
+          'rock',
+          'ballad',
+          'fork',
+          'soul',
+          'trot',
+          'kpop',
+          'jpop'
+        ]
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1157,6 +1175,29 @@ export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
     abbr: Attribute.JSON;
     isSolo: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
     agency: Attribute.String;
+    album: Attribute.JSON;
+    music: Attribute.JSON;
+    video: Attribute.JSON;
+    genre: Attribute.JSON &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        [
+          'electronic',
+          'dance',
+          'hiphop',
+          'rock',
+          'ballad',
+          'fork',
+          'soul',
+          'trot',
+          'kpop',
+          'jpop'
+        ]
+      >;
+    komca: Attribute.String;
+    note: Attribute.Text;
+    compose: Attribute.JSON;
+    lyrics: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1198,6 +1239,28 @@ export interface ApiCaplMusicCaplMusic extends Schema.CollectionType {
     musicId: Attribute.String;
     videoId: Attribute.String;
     relationArtists: Attribute.JSON;
+    genre: Attribute.JSON &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        [
+          'electronic',
+          'dance',
+          'hiphop',
+          'rock',
+          'ballad',
+          'fork',
+          'soul',
+          'trot',
+          'kpop',
+          'jpop'
+        ]
+      >;
+    type: Attribute.JSON &
+      Attribute.Required &
+      Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['origin', 'cover', 'live']
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -47,6 +47,32 @@
     },
     "relationArtists": {
       "type": "json"
+    },
+    "genre": {
+      "type": "customField",
+      "options": [
+        "electronic",
+        "dance",
+        "hiphop",
+        "rock",
+        "ballad",
+        "fork",
+        "soul",
+        "trot",
+        "kpop",
+        "jpop"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "type": {
+      "type": "customField",
+      "options": [
+        "origin",
+        "cover",
+        "live"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }

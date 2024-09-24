@@ -41,6 +41,44 @@
     },
     "agency": {
       "type": "string"
+    },
+    "album": {
+      "type": "json"
+    },
+    "music": {
+      "type": "json",
+      "required": false
+    },
+    "video": {
+      "type": "json"
+    },
+    "genre": {
+      "type": "customField",
+      "options": [
+        "electronic",
+        "dance",
+        "hiphop",
+        "rock",
+        "ballad",
+        "fork",
+        "soul",
+        "trot",
+        "kpop",
+        "jpop"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "komca": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "compose": {
+      "type": "json"
+    },
+    "lyrics": {
+      "type": "json"
     }
   }
 }

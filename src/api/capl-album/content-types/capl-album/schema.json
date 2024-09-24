@@ -31,6 +31,29 @@
     },
     "albumNumbering": {
       "type": "string"
+    },
+    "list": {
+      "type": "json",
+      "required": true
+    },
+    "relationStaffs": {
+      "type": "json"
+    },
+    "genre": {
+      "type": "customField",
+      "options": [
+        "electronic",
+        "dance",
+        "hiphop",
+        "rock",
+        "ballad",
+        "fork",
+        "soul",
+        "trot",
+        "kpop",
+        "jpop"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }
