@@ -3,7 +3,7 @@
 module.exports = {
   routes: [
     {
-      method: "GET",
+      method: "POST",
       path: "/search",
       handler: "collection.searchInCollection",
       config: {
