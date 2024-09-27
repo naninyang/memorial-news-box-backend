@@ -47,6 +47,7 @@ module.exports = {
 
       ctx.send(entries);
     } catch (error) {
+      console.error("Error during searchInCollection:", error);
       ctx.send({ error: "Unable to perform search" }, 500);
     }
   },
