@@ -7,10 +7,10 @@ module.exports = [
     config: {
       enabled: true,
       origin: [
-        "http://localhost:8282",
         "https://semo-cq.vercel.app",
         "https://semo.dev1stud.io",
         "https://nol2tr.dev1stud.io",
+        "http://localhost:8282",
         "http://localhost:3123",
         "http://localhost:3007",
       ],
