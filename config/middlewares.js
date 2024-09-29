@@ -8,7 +8,7 @@ module.exports = [
       enabled: true,
       origin: [
         "http://localhost:8282",
-        "https://semo-cq.dev1stud.io",
+        "https://semo-cq.vercel.app",
         "https://semo.dev1stud.io",
         "https://nol2tr.dev1stud.io",
         "http://localhost:3123",
