@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use strict";
 
 module.exports = {
@@ -33,11 +34,19 @@ module.exports = {
         return ctx.send({ message: "Collection not found" }, 404);
       }
 
-      const searchConditions = Object.keys(collectionType.attributes).map(
-        (attr) => ({
-          [attr]: { $containsi: keyword },
+      const searchConditions = Object.keys(collectionType.attributes)
+        .map((attr) => {
+          const attribute = collectionType.attributes[attr];
+
+          if (attribute.type === "string" || attribute.type === "text") {
+            return { [attr]: { $containsi: keyword } };
+          } else if (attribute.type === "number") {
+            return { [attr]: keyword };
+          } else {
+            return null;
+          }
         })
-      );
+        .filter((condition) => condition !== null);
 
       const entries = await strapi
         .query(`api::${collectionName}.${collectionName}`)
