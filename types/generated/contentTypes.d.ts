@@ -1397,14 +1397,13 @@ export interface ApiMoeviewVideoMoeviewVideo extends Schema.CollectionType {
     singularName: 'moeview-video';
     pluralName: 'moeview-videos';
     displayName: 'Moeview Video';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     isPublish: Attribute.Boolean & Attribute.DefaultTo<false>;
-    isZip: Attribute.Boolean & Attribute.DefaultTo<false>;
-    isLive: Attribute.Boolean;
     subject: Attribute.String;
     title: Attribute.String;
     amusements: Attribute.String;
