@@ -1408,10 +1408,10 @@ export interface ApiMoeviewVideoMoeviewVideo extends Schema.CollectionType {
     title: Attribute.String;
     amusements: Attribute.String;
     video: Attribute.String;
-    review: Attribute.Text;
     relations: Attribute.String;
     isAmusements: Attribute.Boolean & Attribute.DefaultTo<false>;
     embeddingOff: Attribute.Boolean & Attribute.DefaultTo<false>;
+    review: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

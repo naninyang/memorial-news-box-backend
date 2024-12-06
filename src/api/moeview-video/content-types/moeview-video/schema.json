@@ -28,9 +28,6 @@
     "video": {
       "type": "string"
     },
-    "review": {
-      "type": "text"
-    },
     "relations": {
       "type": "string"
     },
@@ -41,6 +38,9 @@
     "embeddingOff": {
       "type": "boolean",
       "default": false
+    },
+    "review": {
+      "type": "blocks"
     }
   }
 }
