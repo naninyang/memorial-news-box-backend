@@ -1100,219 +1100,6 @@ export interface ApiBannerSemoviewBannerSemoview extends Schema.CollectionType {
   };
 }
 
-export interface ApiCaplAlbumCaplAlbum extends Schema.CollectionType {
-  collectionName: 'capl_albums';
-  info: {
-    singularName: 'capl-album';
-    pluralName: 'capl-albums';
-    displayName: 'Capl-album';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    release: Attribute.Integer & Attribute.Required;
-    artist: Attribute.JSON;
-    credit: Attribute.JSON;
-    relationArtists: Attribute.JSON;
-    albumNumbering: Attribute.String;
-    list: Attribute.JSON & Attribute.Required;
-    relationStaffs: Attribute.JSON;
-    genre: Attribute.JSON &
-      Attribute.CustomField<
-        'plugin::multi-select.multi-select',
-        [
-          'electronic',
-          'dance',
-          'hiphop',
-          'rock',
-          'ballad',
-          'fork',
-          'soul',
-          'trot',
-          'kpop',
-          'jpop'
-        ]
-      >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::capl-album.capl-album',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::capl-album.capl-album',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiCaplArtistCaplArtist extends Schema.CollectionType {
-  collectionName: 'capl_artists';
-  info: {
-    singularName: 'capl-artist';
-    pluralName: 'capl-artists';
-    displayName: 'Capl-artist';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String & Attribute.Required;
-    otherName: Attribute.String;
-    debut: Attribute.Date;
-    birth: Attribute.Date;
-    member: Attribute.JSON;
-    group: Attribute.JSON;
-    abbr: Attribute.JSON;
-    isSolo: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
-    agency: Attribute.String;
-    album: Attribute.JSON;
-    music: Attribute.JSON;
-    video: Attribute.JSON;
-    genre: Attribute.JSON &
-      Attribute.CustomField<
-        'plugin::multi-select.multi-select',
-        [
-          'electronic',
-          'dance',
-          'hiphop',
-          'rock',
-          'ballad',
-          'fork',
-          'soul',
-          'trot',
-          'kpop',
-          'jpop'
-        ]
-      >;
-    komca: Attribute.String;
-    note: Attribute.Text;
-    compose: Attribute.JSON;
-    lyrics: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::capl-artist.capl-artist',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::capl-artist.capl-artist',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiCaplMusicCaplMusic extends Schema.CollectionType {
-  collectionName: 'capl_musics';
-  info: {
-    singularName: 'capl-music';
-    pluralName: 'capl-musics';
-    displayName: 'Capl-music';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    album: Attribute.Integer & Attribute.Required;
-    originMusic: Attribute.Integer;
-    originAlbum: Attribute.Integer;
-    artist: Attribute.JSON & Attribute.Required;
-    cover: Attribute.JSON;
-    composer: Attribute.JSON;
-    lyricist: Attribute.JSON;
-    musicId: Attribute.String;
-    videoId: Attribute.String;
-    relationArtists: Attribute.JSON;
-    genre: Attribute.JSON &
-      Attribute.CustomField<
-        'plugin::multi-select.multi-select',
-        [
-          'electronic',
-          'dance',
-          'hiphop',
-          'rock',
-          'ballad',
-          'fork',
-          'soul',
-          'trot',
-          'kpop',
-          'jpop'
-        ]
-      >;
-    type: Attribute.JSON &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::multi-select.multi-select',
-        ['origin', 'cover', 'live']
-      >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::capl-music.capl-music',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::capl-music.capl-music',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiCaplPlaylistCaplPlaylist extends Schema.CollectionType {
-  collectionName: 'capl_playlists';
-  info: {
-    singularName: 'capl-playlist';
-    pluralName: 'capl-playlists';
-    displayName: 'Capl-playlist';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    description: Attribute.String & Attribute.Required;
-    list: Attribute.JSON & Attribute.Required;
-    tags: Attribute.JSON & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::capl-playlist.capl-playlist',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::capl-playlist.capl-playlist',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiContactNol2TrContactNol2Tr extends Schema.CollectionType {
   collectionName: 'contact_nol2trs';
   info: {
@@ -1597,6 +1384,46 @@ export interface ApiLiteratureSemoviewLiteratureSemoview
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::literature-semoview.literature-semoview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiMoeviewVideoMoeviewVideo extends Schema.CollectionType {
+  collectionName: 'moeview_videos';
+  info: {
+    singularName: 'moeview-video';
+    pluralName: 'moeview-videos';
+    displayName: 'Moeview Video';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    isPublish: Attribute.Boolean & Attribute.DefaultTo<false>;
+    isZip: Attribute.Boolean & Attribute.DefaultTo<false>;
+    isLive: Attribute.Boolean;
+    subject: Attribute.String;
+    title: Attribute.String;
+    amusements: Attribute.String;
+    video: Attribute.String;
+    review: Attribute.Text;
+    relations: Attribute.String;
+    isAmusements: Attribute.Boolean & Attribute.DefaultTo<false>;
+    embeddingOff: Attribute.Boolean & Attribute.DefaultTo<false>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::moeview-video.moeview-video',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::moeview-video.moeview-video',
       'oneToOne',
       'admin::user'
     > &
@@ -1925,10 +1752,6 @@ declare module '@strapi/types' {
       'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
       'api::banner-nol2tr.banner-nol2tr': ApiBannerNol2TrBannerNol2Tr;
       'api::banner-semoview.banner-semoview': ApiBannerSemoviewBannerSemoview;
-      'api::capl-album.capl-album': ApiCaplAlbumCaplAlbum;
-      'api::capl-artist.capl-artist': ApiCaplArtistCaplArtist;
-      'api::capl-music.capl-music': ApiCaplMusicCaplMusic;
-      'api::capl-playlist.capl-playlist': ApiCaplPlaylistCaplPlaylist;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
       'api::develog.develog': ApiDevelogDevelog;
       'api::ebenum-nol2tr.ebenum-nol2tr': ApiEbenumNol2TrEbenumNol2Tr;
@@ -1936,6 +1759,7 @@ declare module '@strapi/types' {
       'api::interview-nol2tr.interview-nol2tr': ApiInterviewNol2TrInterviewNol2Tr;
       'api::jejeup-jejeup.jejeup-jejeup': ApiJejeupJejeupJejeupJejeup;
       'api::literature-semoview.literature-semoview': ApiLiteratureSemoviewLiteratureSemoview;
+      'api::moeview-video.moeview-video': ApiMoeviewVideoMoeviewVideo;
       'api::musics-nol2tr.musics-nol2tr': ApiMusicsNol2TrMusicsNol2Tr;
       'api::naver-memorial.naver-memorial': ApiNaverMemorialNaverMemorial;
       'api::newsic-nol2tr.newsic-nol2tr': ApiNewsicNol2TrNewsicNol2Tr;

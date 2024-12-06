@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "moeview_videos",
+  "info": {
+    "singularName": "moeview-video",
+    "pluralName": "moeview-videos",
+    "displayName": "Moeview Video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isPublish": {
+      "type": "boolean",
+      "default": false
+    },
+    "isZip": {
+      "type": "boolean",
+      "default": false
+    },
+    "isLive": {
+      "type": "boolean"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "amusements": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "review": {
+      "type": "text"
+    },
+    "relations": {
+      "type": "string"
+    },
+    "isAmusements": {
+      "type": "boolean",
+      "default": false
+    },
+    "embeddingOff": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
