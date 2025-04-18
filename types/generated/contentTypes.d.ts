@@ -1011,6 +1011,45 @@ export interface ApiAmusementJejeupAmusementJejeup
   };
 }
 
+export interface ApiBannerMoeviewBannerMoeview extends Schema.CollectionType {
+  collectionName: 'banner_moeviews';
+  info: {
+    singularName: 'banner-moeview';
+    pluralName: 'banner-moeviews';
+    displayName: 'Banner Moeview';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    link: Attribute.String;
+    description: Attribute.String;
+    author: Attribute.String;
+    title: Attribute.String;
+    color: Attribute.String;
+    order: Attribute.Integer;
+    isLight: Attribute.Boolean & Attribute.DefaultTo<true>;
+    type: Attribute.Enumeration<
+      ['film', 'anime', 'ott', 'barrier_free', 'semoview']
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::banner-moeview.banner-moeview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::banner-moeview.banner-moeview',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiBannerNol2TrBannerNol2Tr extends Schema.CollectionType {
   collectionName: 'banner_nol2trs';
   info: {
@@ -1749,6 +1788,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::ai-semoview.ai-semoview': ApiAiSemoviewAiSemoview;
       'api::amusement-jejeup.amusement-jejeup': ApiAmusementJejeupAmusementJejeup;
+      'api::banner-moeview.banner-moeview': ApiBannerMoeviewBannerMoeview;
       'api::banner-nol2tr.banner-nol2tr': ApiBannerNol2TrBannerNol2Tr;
       'api::banner-semoview.banner-semoview': ApiBannerSemoviewBannerSemoview;
       'api::contact-nol2tr.contact-nol2tr': ApiContactNol2TrContactNol2Tr;
